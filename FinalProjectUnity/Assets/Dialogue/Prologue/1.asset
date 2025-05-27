@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  Speaker: 
+  Speaker: Narrator
   Lines:
   - You are a novelist, one who has made a quiet living spinning stories from the
     safety of your apartment in the city.
@@ -20,11 +20,12 @@ MonoBehaviour:
     address, just your name written in sharp, familiar handwriting."
   - "It\u2019s from Elwin\u2014your closest friend from university, who vanished
     from your life without explanation over a decade ago."
-  ImageSprite: {fileID: 0}
   ReplyOptions:
   - line: open letter
     nextNode: {fileID: 11400000, guid: 71dec61c4df545d4cb0a090385469ee2, type: 2}
     DiceCheck: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: 8068c2f13c356474d87ab8ba5f8094bc, type: 3}
+  Image_Sprite: {fileID: 0}
   ProcessQuest: 0

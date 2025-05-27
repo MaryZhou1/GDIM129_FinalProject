@@ -9,14 +9,23 @@ public class GameManager : MonoBehaviour
 
     public DialogueManager dialogue_manager;
 
-    public DialogueNode dialogue1;
-    public QuestNode quest1;
+    // public QuestNode quest1;
+
+    public DialogueNode dialogue_test1;
+    public DialogueNode prologue1;
+
 
 
 
     private void Start()
     {
-        dialogue_manager.StartDialogue(dialogue1);
         //QuestManager.instance.StartQuest(quest1);
+        //dialogue_manager.StartDialogue(dialogue_test1);
+
+        dialogue_manager.StartDialogue(prologue1);
+
+
+
+        
     }
 }

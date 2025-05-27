@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  Speaker: 
+  Speaker: Letter
   Lines:
   - "\u201CIf you still remember me, come to Seagull Island. Time is running out.\u201D
     \u2014Elwin"
-  ImageSprite: {fileID: 0}
   ReplyOptions: []
+  Background_Sprite: {fileID: 0}
+  Image_Sprite: {fileID: 21300000, guid: 69a7c74704f200247b8a68a33ccc5d72, type: 3}
   ProcessQuest: 0

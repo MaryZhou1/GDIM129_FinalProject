@@ -31,6 +31,8 @@ public class DialogueManager : MonoBehaviour
 
     public TMP_Text speakerText;
     public TMP_Text dialogueText;
+
+    public Image Background;
     public Image Image;
 
     public Transform replyButtonParent;
@@ -44,7 +46,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             NextLine();
         }
@@ -57,7 +59,7 @@ public class DialogueManager : MonoBehaviour
         line_index = 0;
         dialoguePanel.SetActive(true);
 
-        GlobalManager.Instance.Pause();
+        // GlobalManager.Instance.Pause();
 
         NextLine();
     }
@@ -68,7 +70,18 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueText.text = current_node.Lines[line_index]; // line
             speakerText.text = current_node.Speaker; // speaker
-            Image.sprite = current_node.ImageSprite; // image
+            
+            if (current_node.Image_Sprite != null)
+            {
+                Image.gameObject.SetActive(true);
+                Image.sprite = current_node.Image_Sprite; // has image
+            }
+            else
+                Image.gameObject.SetActive(false); // no image
+
+            if (current_node.Image_Sprite != null)
+                Image.sprite = current_node.Image_Sprite; // change background
+
             line_index++;
         }
         else
@@ -133,7 +146,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialoguePanel.SetActive(false);
 
-        GlobalManager.Instance.Resume();
+        // GlobalManager.Instance.Resume();
 
 
         // If Progress Quest
@@ -144,6 +157,9 @@ public class DialogueManager : MonoBehaviour
 
 
         current_node = null;
+
+        // for this project
+        GlobalManager.Instance.ToEndScene();
     }
 
 

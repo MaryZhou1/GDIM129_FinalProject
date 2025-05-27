@@ -12,12 +12,15 @@ public class DialogueNode : ScriptableObject
 
     public string Speaker;
     public List<string> Lines;
-    public Sprite ImageSprite;
 
-    
-    [Tooltip("[Optional] The audio that should play at the beginning of this line.")]
+    [Header("Reply Options")]
     public List<ReplyOption> ReplyOptions;
 
+    [Header("Optional Image")]
+    public Sprite Background_Sprite;
+    public Sprite Image_Sprite;
+
+    [Header("not used...")]
     public bool ProcessQuest;
 
     //[Tooltip("[Optional] The associated quest FINISHED after this line completes.")]

@@ -14,7 +14,7 @@ public class GlobalManager : MonoBehaviour
     // public DialogueManager DialogueManager;
     // public QuestManager QuestManager;
 
-    public bool isPaused = true;
+    // public bool isPaused = true;
 
 
 
@@ -41,31 +41,36 @@ public class GlobalManager : MonoBehaviour
     //}
 
 
-    public void Pause()
-    {
-        isPaused = true;
-        Time.timeScale = 0f;
-        //Cursor.visible = true;
-        //Cursor.lockState = CursorLockMode.None;
-    }
+    //public void Pause()
+    //{
+    //    isPaused = true;
+    //    Time.timeScale = 0f;
+    //    //Cursor.visible = true;
+    //    //Cursor.lockState = CursorLockMode.None;
+    //}
 
-    public void Resume()
-    {
-        isPaused = false;
-        Time.timeScale = 1f;
-        //Cursor.visible = false;
-        //Cursor.lockState = CursorLockMode.Locked;
-    }
+    //public void Resume()
+    //{
+    //    isPaused = false;
+    //    Time.timeScale = 1f;
+    //    //Cursor.visible = false;
+    //    //Cursor.lockState = CursorLockMode.Locked;
+    //}
 
     public void ToGameScene()
     {
         SceneManager.LoadScene("GameScene");
-        isPaused = false;
+        // isPaused = false;
     }
 
     public void ToHomeScene()
     {
         SceneManager.LoadScene("HomeScene");
-        isPaused = true;
+        // isPaused = true;
+    }
+
+    public void ToEndScene()
+    {
+        SceneManager.LoadScene("EndScene");
     }
 }
