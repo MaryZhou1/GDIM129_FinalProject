@@ -159,7 +159,7 @@ public class DialogueManager : MonoBehaviour
         current_node = null;
 
         // for this project
-        GlobalManager.Instance.ToEndScene();
+        GlobalManager.Instance.DisplayEnding(1);
     }
 
 

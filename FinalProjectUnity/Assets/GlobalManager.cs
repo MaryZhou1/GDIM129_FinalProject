@@ -17,6 +17,7 @@ public class GlobalManager : MonoBehaviour
     // public bool isPaused = true;
 
 
+    public int EndingIndex;
 
 
 
@@ -69,8 +70,10 @@ public class GlobalManager : MonoBehaviour
         // isPaused = true;
     }
 
-    public void ToEndScene()
+    public void DisplayEnding(int ending_index)
     {
         SceneManager.LoadScene("EndScene");
+
+        EndingIndex = ending_index;
     }
 }
