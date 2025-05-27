@@ -9,7 +9,7 @@ using UnityEngine.UI;
 [CreateAssetMenu(fileName = "DialogueNode", menuName = "Dialogue/DialogueNode", order = 1)]
 public class DialogueNode : ScriptableObject
 {
-
+    [Header("Basic")]
     public string Speaker;
     public List<string> Lines;
 
@@ -20,8 +20,11 @@ public class DialogueNode : ScriptableObject
     public Sprite Background_Sprite;
     public Sprite Image_Sprite;
 
-    [Header("not used...")]
-    public bool ProcessQuest;
+    [Header("Ending Leading")]
+    [Inspectable] public int ChangeEndingIndex; // default 0 = no leading to ending
+
+    //[Header("not used...")]
+    //public bool ProcessQuest;
 
     //[Tooltip("[Optional] The associated quest FINISHED after this line completes.")]
     //public Quest QuestFinished;
@@ -34,11 +37,12 @@ public class DialogueNode : ScriptableObject
 [Inspectable]
 public class ReplyOption
 {
+    [Header("Basic")]
     [Inspectable] public string line;
-
     [Inspectable] public DialogueNode nextNode;
 
-    [Inspectable] public bool DiceCheck;
+    [Header("Dice Checking")]
+    [Inspectable] public int DiceCheck_AC; // defult 0 = no dice check
     [Inspectable] public DialogueNode SuccessedNode;
     [Inspectable] public DialogueNode FailedNode;
 }

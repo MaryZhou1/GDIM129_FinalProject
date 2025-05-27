@@ -38,10 +38,11 @@ public class DialogueManager : MonoBehaviour
     public Transform replyButtonParent;
     public GameObject replyButtonPrefab;
 
-    [Header("SerializeField")]
-    [SerializeField] private DialogueNode current_node;
-    [SerializeField] private int line_index = 0;
-
+    
+    // =================
+    private DialogueNode current_node;
+    private int line_index = 0;
+    private int tmp_dice_holder;
 
 
     private void Update()
@@ -82,6 +83,10 @@ public class DialogueManager : MonoBehaviour
             if (current_node.Image_Sprite != null)
                 Image.sprite = current_node.Image_Sprite; // change background
 
+            if (current_node.ChangeEndingIndex != 0)
+                GlobalManager.Instance.EndingIndex = current_node.ChangeEndingIndex; // change ending
+
+
             line_index++;
         }
         else
@@ -118,25 +123,27 @@ public class DialogueManager : MonoBehaviour
 
     private void OnClickReply(ReplyOption reply)
     {
-        foreach (Transform child in replyButtonParent) // clear
+        foreach (Transform child in replyButtonParent) // clear options
             Destroy(child.gameObject);
 
-        if (reply.DiceCheck)
+
+
+        if (reply.DiceCheck_AC != 0) // has dice check
         {
-            // has dice check
-            if (DiceRolling(10))
+            if (DiceRolling(reply.DiceCheck_AC)) // call func
             {
+                reply.SuccessedNode.Lines[0] = "You rolled: " + tmp_dice_holder; // write on scriptable obj
                 StartDialogue(reply.SuccessedNode);
             }
             else
             {
+                reply.FailedNode.Lines[0] = "You rolled: " + tmp_dice_holder; // write on scriptable obj
                 StartDialogue(reply.FailedNode);
             }
         }
         else
         {
-            // no dice check
-            StartDialogue(reply.nextNode);
+            StartDialogue(reply.nextNode); // no dice check
         }
     }
 
@@ -150,16 +157,16 @@ public class DialogueManager : MonoBehaviour
 
 
         // If Progress Quest
-        if (current_node.ProcessQuest)
-        {
-            QuestManager.instance.NextQuest();
-        }
+        //if (current_node.ProcessQuest)
+        //{
+        //    QuestManager.instance.NextQuest();
+        //}
 
 
         current_node = null;
 
-        // for this project
-        GlobalManager.Instance.DisplayEnding(1);
+        // end of the game...
+        GlobalManager.Instance.DisplayEnding();
     }
 
 
@@ -167,6 +174,7 @@ public class DialogueManager : MonoBehaviour
     {
         int outcome = Random.Range(0, 20);
         Debug.Log("You rolled " + outcome);
+        tmp_dice_holder = outcome;
 
         if (outcome >= AC)
         {

@@ -16,7 +16,22 @@ MonoBehaviour:
   Lines:
   - "\u201CIf you still remember me, come to Seagull Island. Time is running out.\u201D
     \u2014Elwin"
-  ReplyOptions: []
+  ReplyOptions:
+  - line: Go to the island
+    nextNode: {fileID: 11400000, guid: 0fd1dfd7d9e722c4dbdfbecb52ee0396, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: This is wrong. I should go home
+    nextNode: {fileID: 11400000, guid: 637246f98021f0c45af80c0078329ff0, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: 'Try to remember (dice check: AC 12)'
+    nextNode: {fileID: 0}
+    DiceCheck_AC: 10
+    SuccessedNode: {fileID: 11400000, guid: 2c66bfcd70c554c4ca1113706dd7f0a1, type: 2}
+    FailedNode: {fileID: 11400000, guid: 249b8e51065359a47903c7ff687efcc5, type: 2}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 21300000, guid: 69a7c74704f200247b8a68a33ccc5d72, type: 3}
-  ProcessQuest: 0
+  ChangeEndingIndex: 0

@@ -70,10 +70,10 @@ public class GlobalManager : MonoBehaviour
         // isPaused = true;
     }
 
-    public void DisplayEnding(int ending_index)
+    public void DisplayEnding()
     {
         SceneManager.LoadScene("EndScene");
 
-        EndingIndex = ending_index;
+        // EndingIndex = ending_index;
     }
 }
