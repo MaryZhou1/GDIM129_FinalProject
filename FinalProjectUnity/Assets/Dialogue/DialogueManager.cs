@@ -38,8 +38,9 @@ public class DialogueManager : MonoBehaviour
     public Transform replyButtonParent;
     public GameObject replyButtonPrefab;
 
-    
+
     // =================
+    [SerializeField] private bool dialogue_active = false;
     private DialogueNode current_node;
     private int line_index = 0;
     private int tmp_dice_holder;
@@ -47,7 +48,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (dialogue_active && Input.GetKeyDown(KeyCode.Space))
         {
             NextLine();
         }
@@ -56,6 +57,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(DialogueNode node)
     {
         // set
+        dialogue_active = true;
         current_node = node;
         line_index = 0;
         dialoguePanel.SetActive(true);
@@ -151,6 +153,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        dialogue_active = false;
         dialoguePanel.SetActive(false);
 
         // GlobalManager.Instance.Resume();

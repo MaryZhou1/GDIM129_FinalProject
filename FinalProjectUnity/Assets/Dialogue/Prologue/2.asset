@@ -27,7 +27,7 @@ MonoBehaviour:
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  - line: 'Try to remember (dice check: AC 12)'
+  - line: 'Try to remember (dice check: AC 10)'
     nextNode: {fileID: 0}
     DiceCheck_AC: 10
     SuccessedNode: {fileID: 11400000, guid: 2c66bfcd70c554c4ca1113706dd7f0a1, type: 2}
