@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GlobalManager : MonoBehaviour
 {
@@ -16,7 +17,16 @@ public class GlobalManager : MonoBehaviour
 
     // public bool isPaused = true;
 
+    [Header("PlayerStatus")]
+    public int sanity = 100;
+    public TMP_Text SanTxt;
+    public Image SanBar;
 
+    private int max_san = 100;
+    private float initialWidth = 137.44f;
+
+
+    [Header("Ending")]
     public int EndingIndex;
 
 
@@ -35,6 +45,20 @@ public class GlobalManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
+
+    public void ChangeSanity(int change)
+    {
+        sanity += change;
+        Debug.Log(sanity);
+        SanTxt.text = sanity.ToString();
+        float fillAmount = (float)sanity / (float)max_san;
+        Debug.Log(fillAmount);
+        SanBar.rectTransform.sizeDelta = new Vector2(initialWidth * fillAmount, SanBar.rectTransform.sizeDelta.y);
+    }
+
+
 
     //public void global_StartDialogue(DialogueNode node)
     //{

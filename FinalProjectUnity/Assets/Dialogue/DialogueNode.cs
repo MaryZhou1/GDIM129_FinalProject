@@ -16,12 +16,15 @@ public class DialogueNode : ScriptableObject
     [Header("Reply Options")]
     public List<ReplyOption> ReplyOptions;
 
-    [Header("Optional Image")]
+    [Header("Background & Image")]
     public Sprite Background_Sprite;
     public Sprite Image_Sprite;
 
-    [Header("Ending Leading")]
-    [Inspectable] public int ChangeEndingIndex; // default 0 = no leading to ending
+    [Header("Ending Change")]
+    public int ChangeEndingIndex; // default 0 = no leading to ending
+
+    [Header("San Change")]
+    public int SanChange = 0; // defult 0 = no san change
 
     //[Header("not used...")]
     //public bool ProcessQuest;

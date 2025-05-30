@@ -56,7 +56,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueNode node)
     {
-        // set
+        // basic set
         dialogue_active = true;
         current_node = node;
         line_index = 0;
@@ -64,31 +64,44 @@ public class DialogueManager : MonoBehaviour
 
         // GlobalManager.Instance.Pause();
 
+        //                   -------  optional set  -------
+
+        // speaker
+        speakerText.text = current_node.Speaker;
+
+        // has image or no image
+        if (current_node.Image_Sprite != null)
+        {
+            Image.gameObject.SetActive(true);
+            Image.sprite = current_node.Image_Sprite; 
+        }
+        else
+            Image.gameObject.SetActive(false);
+
+        // change background
+        if (current_node.Image_Sprite != null)
+            Image.sprite = current_node.Image_Sprite;
+
+        // change ending
+        if (current_node.ChangeEndingIndex != 0)
+            GlobalManager.Instance.EndingIndex = current_node.ChangeEndingIndex;
+
+        // change san
+        if (current_node.SanChange != 0)
+            GlobalManager.Instance.ChangeSanity(current_node.SanChange);
+        
+
+        //                   -------  start line  -------
         NextLine();
     }
+
+
 
     private void NextLine()
     {
         if (line_index < current_node.Lines.Count)
         {
             dialogueText.text = current_node.Lines[line_index]; // line
-            speakerText.text = current_node.Speaker; // speaker
-            
-            if (current_node.Image_Sprite != null)
-            {
-                Image.gameObject.SetActive(true);
-                Image.sprite = current_node.Image_Sprite; // has image
-            }
-            else
-                Image.gameObject.SetActive(false); // no image
-
-            if (current_node.Image_Sprite != null)
-                Image.sprite = current_node.Image_Sprite; // change background
-
-            if (current_node.ChangeEndingIndex != 0)
-                GlobalManager.Instance.EndingIndex = current_node.ChangeEndingIndex; // change ending
-
-
             line_index++;
         }
         else
