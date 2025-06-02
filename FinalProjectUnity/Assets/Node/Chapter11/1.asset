@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: 
+  Speaker: Old Ferryman
+  Lines:
+  - "Not many folks come back here after dark. You really came all this way\u2026
+    to see someone?"
+  ReplyOptions:
+  - line: He was my childhood friend. Eli. Do you know him?
+    nextNode: {fileID: 11400000, guid: 521b809ceba7ad940a671a52d586ce3b, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: This place makes me uneasy... but I had to come.
+    nextNode: {fileID: 11400000, guid: a71f4bfa3d515074d8b8d233a62c374d, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: I'm not even sure why I'm here.
+    nextNode: {fileID: 11400000, guid: a71f4bfa3d515074d8b8d233a62c374d, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 0}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: 0

@@ -10,25 +10,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 111
+  m_Name: 6
   m_EditorClassIdentifier: 
-  Speaker: Old Ferryman
+  Speaker: 'Villager '
   Lines:
-  - "Not many folks come back here after dark. You really came all this way\u2026
-    to see someone?"
+  - " Oh, you\u2019re the one who arrived tonight?  We\u2019ve... been expecting
+    you."
+  - "The room\u2019s all ready inside. Come in, warm yourself up."
   ReplyOptions:
-  - line: '"He was my childhood friend. Eli. Do you know him?"'
-    nextNode: {fileID: 0}
+  - line: Thanks... Do you all know someone named Eli?
+    nextNode: {fileID: 11400000, guid: 9ee6c67258e6eee4fa04cba8bc24656b, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  - line: '"This place makes me uneasy... but I had to come."'
-    nextNode: {fileID: 0}
+  - line: "How did you\u2026 know I was coming?"
+    nextNode: {fileID: 11400000, guid: 53201fe9e2e316944b51a1b7346d64fd, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  - line: '"I''m not even sure why I''m here."'
-    nextNode: {fileID: 0}
+  - line: "I feel like I\u2019ve seen you before."
+    nextNode: {fileID: 11400000, guid: c406ea31f4397a04bac7e8dc4300d8cf, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
