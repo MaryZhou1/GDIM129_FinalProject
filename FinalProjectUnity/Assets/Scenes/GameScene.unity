@@ -1165,8 +1165,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sanity: 100
-  SanTxt: {fileID: 0}
-  SanBar: {fileID: 0}
+  SanTxt: {fileID: 2038405550}
+  SanBar: {fileID: 1574246294}
   EndingIndex: 0
 --- !u!4 &344649607
 Transform:
