@@ -2784,7 +2784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_manager: {fileID: 1794403243}
   dialogue_test1: {fileID: 11400000, guid: fe4b848aa149b9b47907966442012de3, type: 2}
-  prologue1: {fileID: 11400000, guid: 6761f43e0a7e8e04298087323b78d262, type: 2}
+  prologue1: {fileID: 11400000, guid: 7f9c4f8d53b59b04589d4274b43d3cf4, type: 2}
 --- !u!4 &1116265206
 Transform:
   m_ObjectHideFlags: 0
@@ -3150,8 +3150,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -418.75, y: 220}
-  m_SizeDelta: {x: 196.5339, y: 41.2748}
+  m_AnchoredPosition: {x: -257.83, y: 229}
+  m_SizeDelta: {x: 517.02, y: 42.6601}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1194597640
 MonoBehaviour:
@@ -3200,8 +3200,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4872,7 +4872,7 @@ MonoBehaviour:
   Image: {fileID: 1473777153}
   replyButtonParent: {fileID: 240862940}
   replyButtonPrefab: {fileID: 7353441552767873454, guid: 6f399193b22bb784b8089bfdb6de93da, type: 3}
-  dialogue_active: 0
+  dialogue_active: 1
 --- !u!4 &1794403244
 Transform:
   m_ObjectHideFlags: 0
@@ -5546,7 +5546,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.6721, y: 119.2877}
+  m_AnchoredPosition: {x: 0.000019133, y: 133.48}
   m_SizeDelta: {x: 1032.6897, y: 128.9895}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2006830632
@@ -5571,8 +5571,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: saying something...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 248c51fdbb2408b4fb37126afc86996d, type: 2}
-  m_sharedMaterial: {fileID: -1162667548212151831, guid: 248c51fdbb2408b4fb37126afc86996d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e1e2b6e70d59eb343b8928c8f0b1dc02, type: 2}
+  m_sharedMaterial: {fileID: 4498729343248305116, guid: e1e2b6e70d59eb343b8928c8f0b1dc02, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5596,8 +5596,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

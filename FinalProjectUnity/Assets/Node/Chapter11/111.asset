@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 4
+  m_Name: 111
   m_EditorClassIdentifier: 
   Speaker: Old Ferryman
   Lines:
-  - "\"Not many folks come back here after dark. You really came all this way\u2026
-    to see someone?\" "
+  - "Not many folks come back here after dark. You really came all this way\u2026
+    to see someone?"
   ReplyOptions:
   - line: '"He was my childhood friend. Eli. Do you know him?"'
     nextNode: {fileID: 0}
