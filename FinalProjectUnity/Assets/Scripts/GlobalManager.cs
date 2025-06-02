@@ -18,11 +18,11 @@ public class GlobalManager : MonoBehaviour
     // public bool isPaused = true;
 
     [Header("PlayerStatus")]
-    public int sanity = 100;
+    public int sanity = 10;
     public TMP_Text SanTxt;
     public Image SanBar;
 
-    private int max_san = 100;
+    private int max_san = 10;
     private float initialWidth = 137.44f;
 
 
@@ -50,11 +50,11 @@ public class GlobalManager : MonoBehaviour
 
     public void ChangeSanity(int change)
     {
-        sanity += change;
-        Debug.Log(sanity);
+        sanity = Mathf.Clamp(sanity + change, 0, max_san);
+        Debug.Log($"Sanity changed to: {sanity} (Change: {change}) - Caller: {new System.Diagnostics.StackTrace().GetFrame(1).GetMethod().Name}", this);
         SanTxt.text = sanity.ToString();
         float fillAmount = (float)sanity / (float)max_san;
-        Debug.Log(fillAmount);
+        Debug.Log("Fill Amount: " + fillAmount);
         SanBar.rectTransform.sizeDelta = new Vector2(initialWidth * fillAmount, SanBar.rectTransform.sizeDelta.y);
     }
 
