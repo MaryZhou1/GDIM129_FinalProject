@@ -337,7 +337,7 @@ MonoBehaviour:
   fadeInDuration: 1.5
   holdDuration: 2
   fadeOutDuration: 1.5
-  nextSceneName: GameScene2
+  nextSceneName: Chp4
 --- !u!4 &842615384
 Transform:
   m_ObjectHideFlags: 0

@@ -31,6 +31,11 @@ public class DialogueNode : ScriptableObject
     [Header("Scene Transition")]
     public string nextSceneName;
 
+    [Header("Item Content Popup")]
+    [TextArea] public string itemPopupDescription;
+    public Sprite itemPopupImage;
+
+
 
     //[Header("not used...")]
     //public bool ProcessQuest;
