@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: 333
+  m_EditorClassIdentifier: 
+  Speaker: Narrator
+  Lines:
+  - 'A childish drawing of two children under a dark sky. A monstrous sea creature
+    looms behind them. '
+  - "This handwriting\u2026 it\u2019s shaky. Familiar. "
+  itemToGive: {fileID: 11400000, guid: 5e0554face3a3f040b16a4e05a17af7c, type: 2}
+  ReplyOptions:
+  - line: You saw a frame lying next to it.
+    nextNode: {fileID: 11400000, guid: 87052b5c0979c084b9722aa9fb943df0, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 0}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: 0
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 21300000, guid: dbe4256e2b242364787c5a36c9eeab0e, type: 3}

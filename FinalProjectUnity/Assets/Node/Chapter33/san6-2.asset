@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: san6-2
+  m_EditorClassIdentifier: 
+  Speaker: 
+  Lines:
+  - 
+  - "The words on the page seem to crawl, twisting into shapes that shouldn\u2019t
+    be."
+  - Your pulse spikes.
+  - "You don\u2019t remember writing this\u2014but some part of you does.  "
+  itemToGive: {fileID: 0}
+  ReplyOptions:
+  - line: 'You hurriedly left the place. '
+    nextNode: {fileID: 11400000, guid: ed3b982a5aaa15041b6e0aba6fd84b90, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 0}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: -2
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}

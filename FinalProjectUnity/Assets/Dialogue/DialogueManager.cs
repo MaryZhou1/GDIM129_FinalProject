@@ -99,8 +99,20 @@ public class DialogueManager : MonoBehaviour
 
         if (current_node.itemToGive != null)
         {
-            AddItem(current_node.itemToGive);
+            AddItem(current_node.itemToGive); // 添加 item 到 UI
+
+            dialogue_active = false; // 暂停对话输入
+
+            ItemPopupPanel.Instance.ShowItem(
+                current_node.itemPopupImage != null ? current_node.itemPopupImage : current_node.itemToGive.icon,
+                string.IsNullOrEmpty(current_node.itemPopupDescription) ? "" : current_node.itemPopupDescription,
+                () =>
+                {
+                    dialogue_active = true;
+                    NextLine(); // 关闭面板后继续对话
+                });
         }
+
 
 
         //                   -------  start line  -------

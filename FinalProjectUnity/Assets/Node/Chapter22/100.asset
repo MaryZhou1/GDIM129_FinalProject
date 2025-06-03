@@ -22,4 +22,4 @@ MonoBehaviour:
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0
-  nextSceneName: 
+  nextSceneName: CHP3Transition

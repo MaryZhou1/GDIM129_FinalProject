@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 10-1
+  m_Name: 777-1
   m_EditorClassIdentifier: 
-  Speaker: Villager
+  Speaker: Narrator
   Lines:
-  - "You\u2019ll understand soon enough. "
-  - We all have a part to play.
+  - "You take a deep breath and step forward. No more running. If the answer lies
+    ahead, you\u2019ll face it.  "
   itemToGive: {fileID: 0}
   ReplyOptions: []
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0
-  nextSceneName: CHP2Transition
+  nextSceneName: CHP4Transition
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}

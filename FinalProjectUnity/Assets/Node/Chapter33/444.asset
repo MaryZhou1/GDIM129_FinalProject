@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: 444
+  m_EditorClassIdentifier: 
+  Speaker: Narrator
+  Lines:
+  - "You took this photo with Eli, but the spot where you\u2019re standing is blurred
+    and doubled. "
+  itemToGive: {fileID: 11400000, guid: 482512340fab18e49a02a40a96185153, type: 2}
+  ReplyOptions:
+  - line: "I remember this. We took it\u2026 didn\u2019t we?"
+    nextNode: {fileID: 11400000, guid: 1961fe30138bce04dac6465b7b412e6c, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: This photo is all wrong.
+    nextNode: {fileID: 11400000, guid: ce6a7d11e1a10df4085161d338aa66be, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 0}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: 0
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 21300000, guid: c77365bd2c7c32f468b4948927268c9f, type: 3}
