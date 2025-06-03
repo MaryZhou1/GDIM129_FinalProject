@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: san1-fai
   m_EditorClassIdentifier: 
-  Speaker: 
+  Speaker: Narrator
   Lines:
   - 
   - The warmth twists. For a second, it feels like the room is breathing.

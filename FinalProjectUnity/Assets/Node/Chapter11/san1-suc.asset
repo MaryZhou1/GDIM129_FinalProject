@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: san1-suc
   m_EditorClassIdentifier: 
-  Speaker: 
+  Speaker: Narrator
   Lines:
-  - 'You rolled: 19'
+  - 'You rolled: 11'
   - "You hold your breath. Whatever it was, it passes\u2014this time."
   ReplyOptions:
   - line: A voice cuts you back to where you are.
