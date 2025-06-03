@@ -335,11 +335,9 @@ MonoBehaviour:
   subtitleText: {fileID: 1624555765}
   canvasGroup: {fileID: 1308663812}
   fadeInDuration: 1.5
-  titleFadeDuration: 1
-  subtitleFadeDuration: 1
   holdDuration: 2
   fadeOutDuration: 1.5
-  nextSceneName: GameScene
+  nextSceneName: Chp1
 --- !u!4 &842615384
 Transform:
   m_ObjectHideFlags: 0

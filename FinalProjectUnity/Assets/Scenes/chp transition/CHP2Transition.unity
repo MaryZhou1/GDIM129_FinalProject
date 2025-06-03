@@ -660,7 +660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: aabb
+  m_text: The House of Prayer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1e2b6e70d59eb343b8928c8f0b1dc02, type: 2}
   m_sharedMaterial: {fileID: 4498729343248305116, guid: e1e2b6e70d59eb343b8928c8f0b1dc02, type: 2}
