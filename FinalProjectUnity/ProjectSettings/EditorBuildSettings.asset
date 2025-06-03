@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HomeScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/Scenes/chp game scene/Chp1.unity
     guid: 4514a1133cbe69d4496441be95a5aa11
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
@@ -18,6 +18,6 @@ EditorBuildSettings:
     path: Assets/Scenes/PrologueScene.unity
     guid: c8f99eae7dd3ae140891f0458d30c076
   - enabled: 1
-    path: Assets/Scenes/CHP1Transition.unity
+    path: Assets/Scenes/chp transition/CHP1Transition.unity
     guid: 8730e8ed3bfd0084f9f8c27555d5067f
   m_configObjects: {}
