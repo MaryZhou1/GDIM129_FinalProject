@@ -1669,7 +1669,7 @@ MonoBehaviour:
   letterContent: "Dear You,\r\n\r\nThe tide never forgets.  \r\nYou left the island
     once.  \r\nBut the ritual remains unfinished.\r\n\r\nCome back. It's time.\n\r\n\u2014
     Eli\r"
-  nextScene: GameScene
+  nextScene: CHP1Transition
 --- !u!4 &1369453279
 Transform:
   m_ObjectHideFlags: 0
