@@ -10,21 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 22
+  m_Name: san4-1
   m_EditorClassIdentifier: 
-  Speaker: Narrator
-  Lines:
-  - 'Dim, golden light filters through the shattered stained glass. '
-  - "Atop it sits a strange statue\u2014its surface adorned with tendrils, its eyes
-    hollow and watching\u3002 "
-  itemToGive: {fileID: 0}
+  Speaker: 
+  Lines: []
   ReplyOptions:
-  - line: It seems like the statue remembers me?
-    nextNode: {fileID: 11400000, guid: b2810f9e5f3f51441a5cf9335e9bf5f4, type: 2}
+  - line: 
+    nextNode: {fileID: 0}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  Background_Sprite: {fileID: 21300000, guid: 53d6cb9d856e96644bcfe5cac55ff1f0, type: 3}
+  Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
-  SanChange: 0
+  SanChange: -1

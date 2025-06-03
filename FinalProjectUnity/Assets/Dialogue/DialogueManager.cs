@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.U2D;
+using System.Collections.Generic;
 // using UnityEngine.InputSystem;
 
 
@@ -37,6 +38,11 @@ public class DialogueManager : MonoBehaviour
 
     public Transform replyButtonParent;
     public GameObject replyButtonPrefab;
+    public Item itemToGive;
+    public List<Image> itemSlots; // 在 Inspector 里拖进3个Image格子
+    private List<Item> acquiredItems = new List<Item>();
+
+
 
 
     // =================
@@ -89,10 +95,19 @@ public class DialogueManager : MonoBehaviour
         // change san
         if (current_node.SanChange != 0)
             GlobalManager.Instance.ChangeSanity(current_node.SanChange);
-        
+
+        if (current_node.itemToGive != null)
+        {
+            AddItem(current_node.itemToGive);
+        }
+
 
         //                   -------  start line  -------
         NextLine();
+
+        // check for item reward
+   
+
     }
 
 
@@ -203,4 +218,22 @@ public class DialogueManager : MonoBehaviour
             return false;
         }
     }
+
+    private void AddItem(Item item)
+    {
+        if (acquiredItems.Contains(item)) return; // avoid duplicates
+
+        acquiredItems.Add(item);
+
+        for (int i = 0; i < itemSlots.Count; i++)
+        {
+            if (itemSlots[i].sprite == null)
+            {
+                itemSlots[i].sprite = item.icon;
+                itemSlots[i].color = Color.white; // make sure it's visible
+                break;
+            }
+        }
+    }
+
 }

@@ -14,11 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - ' The old chapel still stands on the hillside, worn and silent, watching over
-    the village like a blind sentinel.  I remember... when I was a child, they always
-    told me never to come near it. '
-  ReplyOptions: []
-  Background_Sprite: {fileID: 0}
+  - The old chapel still stands on the hillside, worn and silent, watching over the
+    village like a blind sentinel.
+  - "You remember\u2026 when you were a child, they always told you never to come
+    near it."
+  itemToGive: {fileID: 0}
+  ReplyOptions:
+  - line: "I need to see what\u2019s hidden inside."
+    nextNode: {fileID: 11400000, guid: a2921bcab722e434e96209a7cebceb57, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: "Something feels wrong... but I can\u2019t turn back now."
+    nextNode: {fileID: 11400000, guid: 1e47529bc86d00348a433f5c2335d18d, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: "This place\u2026 it feels like it's been waiting for me."
+    nextNode: {fileID: 11400000, guid: 6cae0d60f331b7b439112f7c1acd413f, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: 0a6b48ffb518e5e4a811b91925e7e575, type: 3}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0

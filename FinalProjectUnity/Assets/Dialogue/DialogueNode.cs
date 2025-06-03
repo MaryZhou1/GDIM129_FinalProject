@@ -5,13 +5,15 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 [CreateAssetMenu(fileName = "DialogueNode", menuName = "Dialogue/DialogueNode", order = 1)]
 public class DialogueNode : ScriptableObject
+
 {
     [Header("Basic")]
     public string Speaker;
     public List<string> Lines;
+    public Item itemToGive;
+
 
     [Header("Reply Options")]
     public List<ReplyOption> ReplyOptions;

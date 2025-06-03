@@ -12,10 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: 11-2
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
-  ReplyOptions: []
+  Speaker: Narrator
+  Lines:
+  - "The door creaks as you step inside. A pressure builds in your ears\u2014like
+    the air itself is watching you."
+  - "Each step forward feels slightly\u2026 out of sync with your body."
+  itemToGive: {fileID: 0}
+  ReplyOptions:
+  - line: You enter the chapel.
+    nextNode: {fileID: 11400000, guid: daa50973c76013d49968d03a5fe1c64c, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
-  SanChange: 0
+  SanChange: -1

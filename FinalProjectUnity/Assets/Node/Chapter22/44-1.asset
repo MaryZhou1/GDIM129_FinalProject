@@ -10,20 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 11-1
+  m_Name: 44-1
   m_EditorClassIdentifier: 
-  Speaker: Narrator
-  Lines:
-  - You push the door open. The wood groans, but the silence inside is heavier than
-    sound.
-  - "Whatever was hidden here\u2026 it\u2019s been waiting a long time to be found."
-  itemToGive: {fileID: 0}
+  Speaker: 
+  Lines: []
   ReplyOptions:
-  - line: You enter the chapel.
-    nextNode: {fileID: 11400000, guid: daa50973c76013d49968d03a5fe1c64c, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
+  - line: Sanity Check
+    nextNode: {fileID: 0}
+    DiceCheck_AC: 10
+    SuccessedNode: {fileID: 11400000, guid: 014c28f8dd0b3e84280b9ea6fbd89a6a, type: 2}
+    FailedNode: {fileID: 11400000, guid: 039935956cb1d5546b0f3eb2c91d5cf9, type: 2}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0

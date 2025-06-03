@@ -10,17 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 11-1
+  m_Name: 44-2
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - You push the door open. The wood groans, but the silence inside is heavier than
-    sound.
-  - "Whatever was hidden here\u2026 it\u2019s been waiting a long time to be found."
+  - "You move away from the altar, careful not to make a sound. The stone beneath
+    your feet feels uneven\u2014almost as if the ground itself shifts with your decision."
+  - At the far end of the chapel, partially obscured by a crumbling tapestry, you
+    find a weathered inscription carved into the wall.
+  - At the far end of the chapel, partially obscured by a crumbling tapestry, you
+    find a weathered inscription carved into the wall.
   itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: You enter the chapel.
-    nextNode: {fileID: 11400000, guid: daa50973c76013d49968d03a5fe1c64c, type: 2}
+  - line: You look closely at the inscription.
+    nextNode: {fileID: 11400000, guid: b96a3eabc42ebad48b12a1038aca6e0d, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
