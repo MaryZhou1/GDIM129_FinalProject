@@ -27,7 +27,7 @@ public class GlobalManager : MonoBehaviour
 
 
     [Header("Ending")]
-    public int EndingIndex;
+    public int EndingIndex = 1;
 
 
 
