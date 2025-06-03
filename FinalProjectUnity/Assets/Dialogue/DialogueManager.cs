@@ -79,8 +79,8 @@ public class DialogueManager : MonoBehaviour
             Image.gameObject.SetActive(false);
 
         // change background
-        if (current_node.Image_Sprite != null)
-            Image.sprite = current_node.Image_Sprite;
+        if (current_node.Background_Sprite != null)
+            Background.sprite = current_node.Background_Sprite;
 
         // change ending
         if (current_node.ChangeEndingIndex != 0)
