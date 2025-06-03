@@ -12,11 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: 88-2
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
+  Speaker: Narrator
+  Lines:
+  - You close the book with a quiet thud.
+  - Whatever this place is hiding... you're not sure you want to know.
   itemToGive: {fileID: 0}
-  ReplyOptions: []
+  ReplyOptions:
+  - line: It's time to go. You saw priest again.
+    nextNode: {fileID: 11400000, guid: a5e9b77983d3ac546802d702ece2902c, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0
+  nextSceneName: 

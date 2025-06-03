@@ -23,4 +23,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/chp game scene/Chp2.unity
     guid: f76f0982a0fec5b418534170b6ff49fd
+  - enabled: 1
+    path: Assets/Scenes/chp transition/CHP2Transition.unity
+    guid: 858b027a3a4cf4647933c5dfbd89a603
+  - enabled: 1
+    path: Assets/Scenes/chp transition/CHP3Transition 1.unity
+    guid: c4bdfec7fd0b48146a420c27d3bb029b
+  - enabled: 1
+    path: Assets/Scenes/chp transition/CHP4Transition 2.unity
+    guid: 8d5132e877621614880436e03ca6f396
   m_configObjects: {}

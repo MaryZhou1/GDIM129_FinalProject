@@ -12,11 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: 88
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
-  itemToGive: {fileID: 0}
-  ReplyOptions: []
-  Background_Sprite: {fileID: 0}
+  Speaker: Narrator
+  Lines:
+  - When you're ready to leave, you found something.
+  - "The altar is covered in a faded cloth, marked with symbols drawn in what looks
+    like some kind of plant-based ink\u2014triangles, and eyes staring outward. "
+  - 'Lying next to it is a tattered holy book. '
+  - You open it... and on one of the pages, your name is written.
+  itemToGive: {fileID: 11400000, guid: f90f27d5354d2a44da33dc2d838e70f0, type: 2}
+  ReplyOptions:
+  - line: I need to see more.
+    nextNode: {fileID: 11400000, guid: 07be335605283a94ca361af91d95214f, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: "No. I\u2019ve seen enough."
+    nextNode: {fileID: 11400000, guid: f126555860e170f4b8489175f449d971, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: "This is wrong. This page shouldn\u2019t exist."
+    nextNode: {fileID: 11400000, guid: 70f58cd48e5d93a4db9873fb1ea45c00, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: 2a273bbbd6292844c89bf6b8b2c9eb8e, type: 3}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0
+  nextSceneName: 

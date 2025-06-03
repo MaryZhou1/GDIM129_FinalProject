@@ -28,6 +28,10 @@ public class DialogueNode : ScriptableObject
     [Header("San Change")]
     public int SanChange = 0; // defult 0 = no san change
 
+    [Header("Scene Transition")]
+    public string nextSceneName;
+
+
     //[Header("not used...")]
     //public bool ProcessQuest;
 

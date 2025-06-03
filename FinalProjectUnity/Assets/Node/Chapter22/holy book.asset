@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: holy book
   m_EditorClassIdentifier: 
   itemName: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: b2a65445d2bcd8e4fbc9581aed791a5f, type: 3}

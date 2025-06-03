@@ -19,8 +19,14 @@ MonoBehaviour:
     remains safe."'
   - '"And now... the tides bring you home." '
   itemToGive: {fileID: 0}
-  ReplyOptions: []
+  ReplyOptions:
+  - line: The priest left mysteriously.
+    nextNode: {fileID: 11400000, guid: 5f3c3034db5779142a98b9363574439c, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0
+  nextSceneName: 

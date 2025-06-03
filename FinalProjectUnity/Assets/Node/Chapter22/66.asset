@@ -25,7 +25,8 @@ MonoBehaviour:
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  Background_Sprite: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: db475bfd5c1b52c4b9bf7d44d73ee8a2, type: 3}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0
+  nextSceneName: 

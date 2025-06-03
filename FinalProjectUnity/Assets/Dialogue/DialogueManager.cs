@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.U2D;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 // using UnityEngine.InputSystem;
 
 
@@ -184,21 +185,19 @@ public class DialogueManager : MonoBehaviour
         dialogue_active = false;
         dialoguePanel.SetActive(false);
 
-        // GlobalManager.Instance.Resume();
+        // 切换场景（如果当前 node 设置了）
+        if (!string.IsNullOrEmpty(current_node.nextSceneName))
+        {
+            SceneManager.LoadScene(current_node.nextSceneName);
+            return;
+        }
 
-
-        // If Progress Quest
-        //if (current_node.ProcessQuest)
-        //{
-        //    QuestManager.instance.NextQuest();
-        //}
-
+        // 否则进入默认结算逻辑
+        GlobalManager.Instance.DisplayEnding();
 
         current_node = null;
-
-        // end of the game...
-        GlobalManager.Instance.DisplayEnding();
     }
+
 
 
     private bool DiceRolling(int AC)
