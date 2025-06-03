@@ -32,7 +32,7 @@ MonoBehaviour:
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  Background_Sprite: {fileID: 0}
-  Image_Sprite: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: 543d9ecf325700e4ab64ce4e79d03b3a, type: 3}
+  Image_Sprite: {fileID: 21300000, guid: 543d9ecf325700e4ab64ce4e79d03b3a, type: 3}
   ChangeEndingIndex: 0
   SanChange: 0

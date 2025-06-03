@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: 10-2
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
-  ReplyOptions: []
+  Speaker: Villager
+  Lines:
+  - "Of course. It\u2019s a lot to take in."
+  ReplyOptions:
+  - line: You hear a whisper.
+    nextNode: {fileID: 11400000, guid: 523746feb98d64746ad20f1dce2920b8, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
-  SanChange: 0
+  SanChange: -1

@@ -19,9 +19,9 @@ MonoBehaviour:
   ReplyOptions:
   - line: Sanity Check
     nextNode: {fileID: 0}
-    DiceCheck_AC: 2
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
+    DiceCheck_AC: 8
+    SuccessedNode: {fileID: 11400000, guid: 7846ffca8dd83d04a80102a882908678, type: 2}
+    FailedNode: {fileID: 11400000, guid: 928fec97236f8e540a03183d0cfe4af4, type: 2}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0

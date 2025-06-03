@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
+  - "You linger for a moment, listening to the waves crash against the dock... then
+    turn away. The path ahead isn\u2019t welcoming\u2014but you follow it anyway."
   - 'You know this place... but something feels off. '
   - "The dock\u2014it\u2019s not how you remember it. Did it change\u2026 or did
     you?"

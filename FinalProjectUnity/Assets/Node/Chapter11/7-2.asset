@@ -24,4 +24,4 @@ MonoBehaviour:
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
-  SanChange: 0
+  SanChange: -1

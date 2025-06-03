@@ -17,8 +17,7 @@ MonoBehaviour:
   - "Strange time to come back\u2026 especially with the tide shifting. "
   - "Whatever you\u2019re looking for... it might just be looking back at you."
   - "\"Stay close. The island isn\u2019t what it used to be."
-  - "You linger for a moment, listening to the waves crash against the dock... then
-    turn away. The path ahead isn\u2019t welcoming\u2014but you follow it anyway."
+  - 
   ReplyOptions:
   - line: You said goodbye to the ferryman. Step on the island.
     nextNode: {fileID: 11400000, guid: c559c576199797b408f863ff1f3ecb15, type: 2}
@@ -28,4 +27,4 @@ MonoBehaviour:
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
-  SanChange: 0
+  SanChange: -1

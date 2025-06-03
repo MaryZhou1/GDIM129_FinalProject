@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: 10-1
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
+  Speaker: Villager
+  Lines:
+  - "You\u2019ll understand soon enough. "
+  - We all have a part to play.
   ReplyOptions: []
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
