@@ -47,6 +47,7 @@ public class DialogueManager : MonoBehaviour
 
 
     // =================
+    public SanityUI sanUI;
     [SerializeField] private bool dialogue_active = false;
     private DialogueNode current_node;
     private int line_index = 0;
@@ -63,6 +64,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueNode node)
     {
+        sanUI.UpdateSanity();
+
         // basic set
         dialogue_active = true;
         current_node = node;
@@ -95,7 +98,7 @@ public class DialogueManager : MonoBehaviour
 
         // change san
         if (current_node.SanChange != 0)
-            GlobalManager.Instance.ChangeSanity(current_node.SanChange);
+            sanUI.ChangeSanity(current_node.SanChange);
 
         if (current_node.itemToGive != null)
         {

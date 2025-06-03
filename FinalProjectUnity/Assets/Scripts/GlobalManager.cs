@@ -19,11 +19,8 @@ public class GlobalManager : MonoBehaviour
 
     [Header("PlayerStatus")]
     public int sanity = 10;
-    public TMP_Text SanTxt;
-    public Image SanBar;
-
-    private int max_san = 10;
-    private float initialWidth = 137.44f;
+    public int MaxSan = 10;
+    
 
 
     [Header("Ending")]
@@ -46,41 +43,6 @@ public class GlobalManager : MonoBehaviour
         }
     }
 
-
-
-    public void ChangeSanity(int change)
-    {
-        sanity = Mathf.Clamp(sanity + change, 0, max_san);
-        Debug.Log($"Sanity changed to: {sanity} (Change: {change}) - Caller: {new System.Diagnostics.StackTrace().GetFrame(1).GetMethod().Name}", this);
-        SanTxt.text = sanity.ToString();
-        float fillAmount = (float)sanity / (float)max_san;
-        Debug.Log("Fill Amount: " + fillAmount);
-        SanBar.rectTransform.sizeDelta = new Vector2(initialWidth * fillAmount, SanBar.rectTransform.sizeDelta.y);
-    }
-
-
-
-    //public void global_StartDialogue(DialogueNode node)
-    //{
-    //    DialogueManager.StartDialogue(node);
-    //}
-
-
-    //public void Pause()
-    //{
-    //    isPaused = true;
-    //    Time.timeScale = 0f;
-    //    //Cursor.visible = true;
-    //    //Cursor.lockState = CursorLockMode.None;
-    //}
-
-    //public void Resume()
-    //{
-    //    isPaused = false;
-    //    Time.timeScale = 1f;
-    //    //Cursor.visible = false;
-    //    //Cursor.lockState = CursorLockMode.Locked;
-    //}
 
     public void ToGameScene()
     {
