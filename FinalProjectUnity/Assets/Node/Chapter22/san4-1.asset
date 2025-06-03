@@ -12,11 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: san4-1
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
+  Speaker: Narrator
+  Lines:
+  - 'You rolled: 11'
+  - 'As you reach toward the base, a sharp flash strikes your memory.  '
+  - 'You see two boys playing by the sea... One of them is you.  '
+  - The other... is Eli.
+  itemToGive: {fileID: 11400000, guid: 69c41952bffd16049bde2a1f5416a992, type: 2}
   ReplyOptions:
-  - line: 
-    nextNode: {fileID: 0}
+  - line: You suddenly saw a man.
+    nextNode: {fileID: 11400000, guid: 45b9507307acbde4b9a5b37161bd1957, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}

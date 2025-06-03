@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: 77
+  m_EditorClassIdentifier: 
+  Speaker: Priest
+  Lines:
+  - "\u201COn the night of the returning black moon... you were always meant to come
+    back.\u201D"
+  - "\u201CTell me... do you still remember the rite?\u201D"
+  itemToGive: {fileID: 0}
+  ReplyOptions:
+  - line: What do you mean by the black moon?
+    nextNode: {fileID: 11400000, guid: 371489da0febe7242a86ec17ed7f5caf, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: I have no idea what you're talking about.
+    nextNode: {fileID: 11400000, guid: 5f1274fb75b2d784a9e00823d6170294, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: Save the cult nonsense for someone else.
+    nextNode: {fileID: 11400000, guid: 9cd9692d82a7b9f4aaf3f25ed8daa0c0, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 0}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: 0

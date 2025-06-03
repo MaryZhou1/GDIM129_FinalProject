@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 55
+  m_Name: 66
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - 'Below them, a line in faded Common reads:'
-  - "\u201CEvery ten years, one returns, so the sea remains still.\u201D"
-  itemToGive: {fileID: 11400000, guid: 1fcd7e0655eb48a4481cfda67f4a4f43, type: 2}
+  - An old man steps slowly out from the shadows.
+  - "His robes drag across the stone floor. His face is barely visible \u2014 a pale
+    mask beneath the hood."
+  - His voice is brittle, yet full of something ancient.
+  itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: You suddenly saw a man.
-    nextNode: {fileID: 11400000, guid: 45b9507307acbde4b9a5b37161bd1957, type: 2}
+  - line: Talk to the priest.
+    nextNode: {fileID: 11400000, guid: b71b5dbc7b265c24296eab5dbd6c780e, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}

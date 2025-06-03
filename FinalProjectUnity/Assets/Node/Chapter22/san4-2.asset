@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: san4-2
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
-  ReplyOptions: []
+  Speaker: Narrator
+  Lines:
+  - 'You rolled: 9'
+  - "A sudden jolt grips your body.   In your mind\u2019s eye, you see yourself...
+    bound into the base of the statue.  "
+  itemToGive: {fileID: 0}
+  ReplyOptions:
+  - line: You decided to check the back.
+    nextNode: {fileID: 11400000, guid: ade6d92b5c9b70e43bc5beb092f1b73a, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
