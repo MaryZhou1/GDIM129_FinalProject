@@ -26,10 +26,10 @@ public class PrologueWithLetter : MonoBehaviour
     void Update()
     {
         // Allow ESC to close the letter
-        if (letterOpen && Input.GetKeyDown(KeyCode.Escape))
-        {
-            CloseLetter();
-        }
+        //if (letterOpen && Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    CloseLetter();
+        //}
     }
 
     IEnumerator PlayIntro()

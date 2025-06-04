@@ -10,9 +10,9 @@ public class ChapterTransition : MonoBehaviour
     public TextMeshProUGUI subtitleText;
     public CanvasGroup canvasGroup;
 
-    public float fadeInDuration = 1.5f;
-    public float holdDuration = 1f;
-    public float fadeOutDuration = 1.5f;
+    public float fadeInDuration = 0.5f;
+    public float holdDuration = 0.5f;
+    public float fadeOutDuration = 0.5f;
     public string nextSceneName = "GameScene"; // 你的第一章场景名
 
     public GameObject NextSceneButton;
@@ -25,17 +25,17 @@ public class ChapterTransition : MonoBehaviour
     IEnumerator PlayTransition()
     {
         // 淡入
-        float t = 0f;
-        while (t < fadeInDuration)
-        {
-            t += Time.deltaTime;
-            canvasGroup.alpha = Mathf.Lerp(0f, 1f, t / fadeInDuration);
-            yield return null;
-        }
+        //float t = 0f;
+        //while (t < fadeInDuration)
+        //{
+        //    t += Time.deltaTime;
+        //    canvasGroup.alpha = Mathf.Lerp(0f, 1f, t / fadeInDuration);
+        //    yield return null;
+        //}
 
         yield return new WaitForSeconds(holdDuration);
 
-        // button
+        // button show
         NextSceneButton.SetActive(true);
 
         // 淡出
