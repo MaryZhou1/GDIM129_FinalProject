@@ -12,14 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: 2222-1-1
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
-  itemToGive: {fileID: 0}
-  ReplyOptions: []
+  Speaker: Narrator
+  Lines:
+  - The ritual takes one life every ten years.
+  itemToGive: {fileID: 11400000, guid: e02df4d357b71a046b47b299a3112c88, type: 2}
+  ReplyOptions:
+  - line: Clue Gained.
+    nextNode: {fileID: 11400000, guid: 012a7ab255e6b5c4a946e75fd6a672bd, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
-  itemPopupImage: {fileID: 0}
+  itemPopupImage: {fileID: 21300000, guid: 6cf9f58cabe87e440a6a2efcf934884a, type: 3}

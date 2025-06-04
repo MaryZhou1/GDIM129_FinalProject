@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 2222-2
+  m_Name: "\u5D29\u6E83"
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
+  Speaker: Narrator
+  Lines:
+  - "Just as the ritual begins, you shout for it to stop\u2014  but it\u2019s already
+    too late. "
+  - "You see versions of yourself circling the altar, each one whispering something
+    you can\u2019t quite hear. "
+  - 'The world begins to unravel. '
+  - 'The text itself peels away from the screen,  page by page, sentence by sentence,
+    flying into the void. '
   itemToGive: {fileID: 0}
-  ReplyOptions:
-  - line: Sanity Check
-    nextNode: {fileID: 0}
-    DiceCheck_AC: 10
-    SuccessedNode: {fileID: 11400000, guid: e90d28912d6be2d4a9ee15062497892c, type: 2}
-    FailedNode: {fileID: 11400000, guid: 1b4600b19f4a73f4d85bc320422c3325, type: 2}
-  Background_Sprite: {fileID: 0}
+  ReplyOptions: []
+  Background_Sprite: {fileID: 21300000, guid: 9d8e1345b412bcf47b951e1264725f1f, type: 3}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0

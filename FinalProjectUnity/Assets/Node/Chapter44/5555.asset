@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: 5555
+  m_EditorClassIdentifier: 
+  Speaker: Mother
+  Lines:
+  - You were born under the Black Moon.  You are the chosen child... you must be
+    brave.
+  itemToGive: {fileID: 0}
+  ReplyOptions:
+  - line: "I\u2019m not the one they want!"
+    nextNode: {fileID: 11400000, guid: 2bf3f35ca69a35943969311281567c2a, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: "If this is fate... then I\u2019ll accept it."
+    nextNode: {fileID: 11400000, guid: 2bf3f35ca69a35943969311281567c2a, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: "Is this Eli\u2019s voice... or mine?"
+    nextNode: {fileID: 11400000, guid: 2bf3f35ca69a35943969311281567c2a, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 0}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: 0
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}

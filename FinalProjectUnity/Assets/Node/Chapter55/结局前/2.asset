@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  Speaker: Villager
+  Lines:
+  - ' "The priest says... you''re ready." '
+  itemToGive: {fileID: 0}
+  ReplyOptions:
+  - line: "I\u2019ll go. But not for your god."
+    nextNode: {fileID: 11400000, guid: 282a7311e20b5254d9c976275fd1b13b, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: "I\u2026 still need to understand."
+    nextNode: {fileID: 11400000, guid: 6bea7477cd2a2e54d94ab40945eeacd4, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: "It\u2019s time to end this."
+    nextNode: {fileID: 11400000, guid: 434c4d9150fd4054488234f5c9a944f3, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 0}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: 0
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}

@@ -10,21 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 2222-2
+  m_Name: san-2-1
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
+  Speaker: Narrator
+  Lines:
+  - 'You rolled: 19'
   itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: Sanity Check
-    nextNode: {fileID: 0}
-    DiceCheck_AC: 10
-    SuccessedNode: {fileID: 11400000, guid: e90d28912d6be2d4a9ee15062497892c, type: 2}
-    FailedNode: {fileID: 11400000, guid: 1b4600b19f4a73f4d85bc320422c3325, type: 2}
+  - line: You saw a hidden message.
+    nextNode: {fileID: 11400000, guid: b76d3c2c8eabd2b418281e3e0a2114e3, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
-  SanChange: 0
+  SanChange: -1
   nextSceneName: 
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}

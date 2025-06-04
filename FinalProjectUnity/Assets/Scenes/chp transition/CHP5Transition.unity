@@ -338,7 +338,7 @@ MonoBehaviour:
   fadeInDuration: 1.5
   holdDuration: 2
   fadeOutDuration: 1.5
-  nextSceneName: Chp4
+  nextSceneName: Chp5
   NextSceneButton: {fileID: 1012488497}
 --- !u!4 &842615384
 Transform:
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chapter 4
+  m_text: Chapter 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f00e7d9614bf8384d8f3872e1da14953, type: 2}
   m_sharedMaterial: {fileID: 7147104786028885417, guid: f00e7d9614bf8384d8f3872e1da14953, type: 2}
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Whispers in the Woods
+  m_text: The Sea Remains Still
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1e2b6e70d59eb343b8928c8f0b1dc02, type: 2}
   m_sharedMaterial: {fileID: 4498729343248305116, guid: e1e2b6e70d59eb343b8928c8f0b1dc02, type: 2}

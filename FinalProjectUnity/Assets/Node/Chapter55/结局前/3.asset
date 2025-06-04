@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  Speaker: Narrator
+  Lines:
+  - 'The rain falls on your skin, cold and sharp. '
+  - "Each step feels like you\u2019re walking through the shadows of your past. "
+  - "Tonight isn't a return\u2014it's a rebirth. "
+  itemToGive: {fileID: 0}
+  ReplyOptions:
+  - line: Eli, wait for me!
+    nextNode: {fileID: 0}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: You're not real.
+    nextNode: {fileID: 0}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: "I knew we\u2019d meet again."
+    nextNode: {fileID: 0}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: 3333209511114a147b2089f34a8e31ee, type: 3}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: 0
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}

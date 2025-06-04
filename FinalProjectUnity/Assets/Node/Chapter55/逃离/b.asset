@@ -10,21 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 2222-2
+  m_Name: b
   m_EditorClassIdentifier: 
-  Speaker: 
-  Lines: []
+  Speaker: Narrator
+  Lines:
+  - 'Alone, you board the ferry and leave the island behind. '
+  - "The screen fades\u2014 A book cover appears:  \u201CShadows in the Tide\u201D, "
+  - ' authored by someone who now knows the truth. '
   itemToGive: {fileID: 0}
-  ReplyOptions:
-  - line: Sanity Check
-    nextNode: {fileID: 0}
-    DiceCheck_AC: 10
-    SuccessedNode: {fileID: 11400000, guid: e90d28912d6be2d4a9ee15062497892c, type: 2}
-    FailedNode: {fileID: 11400000, guid: 1b4600b19f4a73f4d85bc320422c3325, type: 2}
+  ReplyOptions: []
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
-  itemPopupImage: {fileID: 0}
+  itemPopupImage: {fileID: 21300000, guid: 50bd4d74252d896469024a6b30779200, type: 3}

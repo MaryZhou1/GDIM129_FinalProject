@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: "\u732E\u796D"
+  m_EditorClassIdentifier: 
+  Speaker: Narrator
+  Lines:
+  - You walk willingly toward the stone altar.
+  - "The villagers chant in unison, their voices growing louder, more desperateThe
+    sound of the chapel bell shifts\u2014deepens\u2014becomes something like a whale\u2019s
+    cry from the ocean trench. "
+  - 'Your eyes lose focus. You feel no fear. '
+  - 'The fire rises, and you do not resist. '
+  - 'In the darkness, something opens its eyes beneath the waves. '
+  itemToGive: {fileID: 0}
+  ReplyOptions: []
+  Background_Sprite: {fileID: 21300000, guid: 11ea365c9651dd742a9e6d60b329a543, type: 3}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: 0
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}
