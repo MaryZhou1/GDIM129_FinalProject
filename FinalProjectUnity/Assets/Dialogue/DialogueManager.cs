@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.U2D;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+
 // using UnityEngine.InputSystem;
 
 
@@ -42,9 +43,8 @@ public class DialogueManager : MonoBehaviour
     public Item itemToGive;
     public List<Image> itemSlots; // 在 Inspector 里拖进3个Image格子
     private List<Item> acquiredItems = new List<Item>();
-
-
-
+    public AudioClip dialogueClickClip;      // 你的 .wav 文件
+    public AudioSource audioSource;          // 用于播放 clip 的 audioSource
 
     // =================
     public SanityUI sanUI;
@@ -132,8 +132,14 @@ public class DialogueManager : MonoBehaviour
     {
         if (line_index < current_node.Lines.Count)
         {
-            dialogueText.text = current_node.Lines[line_index]; // line
+            dialogueText.text = current_node.Lines[line_index];
             line_index++;
+
+            //   播放点击音效：使用 AudioSource 播一次 AudioClip
+            if (dialogueClickClip != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(dialogueClickClip);
+            }
         }
         else
         {

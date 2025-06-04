@@ -3,7 +3,18 @@ guid: 36d6c4d51d0c6d642b1e42eec214b225
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - dialoguePanel: {instanceID: 0}
+  - speakerText: {instanceID: 0}
+  - dialogueText: {instanceID: 0}
+  - Background: {instanceID: 0}
+  - Image: {instanceID: 0}
+  - replyButtonParent: {instanceID: 0}
+  - replyButtonPrefab: {instanceID: 0}
+  - itemToGive: {instanceID: 0}
+  - dialogueClickClip: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
+  - audioSource: {instanceID: 0}
+  - sanUI: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
