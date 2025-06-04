@@ -255,10 +255,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 256072d6261e9f14c808510527b05744, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1.5
+  m_Pitch: 1.2
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -596,7 +596,7 @@ MonoBehaviour:
   fadeOutDuration: 1.5
   nextSceneName: Chp5
   audioSource: {fileID: 236989301}
-  clickSound: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
+  clickSound: {fileID: 8300000, guid: 256072d6261e9f14c808510527b05744, type: 3}
   NextSceneButton: {fileID: 1012488497}
 --- !u!4 &842615384
 Transform:
