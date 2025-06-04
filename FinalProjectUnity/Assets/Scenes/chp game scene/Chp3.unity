@@ -299,7 +299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lowSanityThreshold: 3
-  globalManager: {fileID: 344649606}
   blurMaterial: {fileID: 2100000, guid: ed886dc0b4ed82542be0a98cd03c8cb7, type: 2}
   maxBlurSize: 3
   blurFadeDuration: 2
@@ -3065,6 +3064,7 @@ GameObject:
   - component: {fileID: 1091919233}
   - component: {fileID: 1091919232}
   - component: {fileID: 1091919236}
+  - component: {fileID: 1091919237}
   m_Layer: 5
   m_Name: InGameCanvas
   m_TagString: Untagged
@@ -3176,6 +3176,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9632c8d65f77e834eade96c727bd4cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1091919237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091919231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dfc8d22f8aff834ca89c6349411973a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SanTxt: {fileID: 2038405550}
+  SanBar: {fileID: 1574246294}
 --- !u!1 &1107866189
 GameObject:
   m_ObjectHideFlags: 0
@@ -5240,7 +5254,7 @@ MonoBehaviour:
   - {fileID: 1887373906}
   - {fileID: 977841323}
   - {fileID: 1980285566}
-  sanUI: {fileID: 0}
+  sanUI: {fileID: 1091919237}
   dialogue_active: 1
 --- !u!4 &1794403244
 Transform:
