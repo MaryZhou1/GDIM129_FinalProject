@@ -18,21 +18,10 @@ MonoBehaviour:
   - "The altar is covered in a faded cloth, marked with symbols drawn in what looks
     like some kind of plant-based ink\u2014triangles, and eyes staring outward. "
   - 'Lying next to it is a tattered holy book. '
-  - You open it... and on one of the pages, your name is written.
-  itemToGive: {fileID: 11400000, guid: f90f27d5354d2a44da33dc2d838e70f0, type: 2}
+  itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: I need to see more.
-    nextNode: {fileID: 11400000, guid: 07be335605283a94ca361af91d95214f, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  - line: "No. I\u2019ve seen enough."
-    nextNode: {fileID: 11400000, guid: f126555860e170f4b8489175f449d971, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  - line: "This is wrong. This page shouldn\u2019t exist."
-    nextNode: {fileID: 11400000, guid: 70f58cd48e5d93a4db9873fb1ea45c00, type: 2}
+  - line: You opened it.
+    nextNode: {fileID: 11400000, guid: d4b2800c76b086143bbd5b3c98d8bf26, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
@@ -42,4 +31,4 @@ MonoBehaviour:
   SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
-  itemPopupImage: {fileID: 21300000, guid: 3ee967d2a77aec84e8f951254ccb05d3, type: 3}
+  itemPopupImage: {fileID: 0}

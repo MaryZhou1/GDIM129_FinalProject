@@ -299,7 +299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lowSanityThreshold: 3
-  globalManager: {fileID: 344649606}
   blurMaterial: {fileID: 2100000, guid: ed886dc0b4ed82542be0a98cd03c8cb7, type: 2}
   maxBlurSize: 3
   blurFadeDuration: 2
@@ -3706,8 +3705,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 26}
-  m_SizeDelta: {x: 427.5993, y: 253.3473}
+  m_AnchoredPosition: {x: 0.000013351, y: 32}
+  m_SizeDelta: {x: 390.0255, y: 260.1107}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1265887780
 MonoBehaviour:
