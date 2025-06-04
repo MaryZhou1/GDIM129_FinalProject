@@ -4,8 +4,10 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - globalManager: {instanceID: 0}
   - blurMaterial: {fileID: 2100000, guid: ed886dc0b4ed82542be0a98cd03c8cb7, type: 2}
+  - bloodSplatterImage: {instanceID: 0}
+  - bloodSplatterSound: {fileID: 8300000, guid: 8cd4e89f85fb9c64392e0a3432adce59, type: 3}
+  - audioSource: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

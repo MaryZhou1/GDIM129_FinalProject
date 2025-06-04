@@ -3,7 +3,13 @@ guid: f5fc9874ca553e94c96a054c7725d946
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - titleText: {instanceID: 0}
+  - subtitleText: {instanceID: 0}
+  - canvasGroup: {instanceID: 0}
+  - audioSource: {instanceID: 0}
+  - clickSound: {fileID: 8300000, guid: 748f248af87067d42a08811cd6efdfdd, type: 3}
+  - NextSceneButton: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
