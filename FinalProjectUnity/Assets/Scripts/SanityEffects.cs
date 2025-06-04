@@ -6,7 +6,6 @@ public class SanityEffects : MonoBehaviour
 {
     [Header("Sanity Settings")]
     public int lowSanityThreshold = 3; // Threshold for low sanity effects (San ≤ 3)
-    public GlobalManager globalManager; // Reference to GlobalManager for sanity value
 
     [Header("Blur Effect (Shader Based)")]
     public Material blurMaterial; // Material with the ScreenBlur shader
@@ -39,9 +38,9 @@ public class SanityEffects : MonoBehaviour
         if (bloodSplatterImage != null)
         {
             bloodSplatterImage.color = new Color(1f, 1f, 1f, 0f);
-            if (globalManager != null)
+            if (GlobalManager.Instance != null)
             {
-                previousSanity = globalManager.sanity;
+                previousSanity = GlobalManager.Instance.sanity;
                 Debug.Log($"Initial Sanity: {previousSanity}");
             }
             else
@@ -57,13 +56,13 @@ public class SanityEffects : MonoBehaviour
 
     private void Update()
     {
-        if (globalManager == null)
+        if (GlobalManager.Instance == null)
         {
             Debug.LogWarning("GlobalManager reference not set in SanityEffects! Please assign in Inspector.");
             return;
         }
 
-        int currentSanity = globalManager.sanity;
+        int currentSanity = GlobalManager.Instance.sanity;
 
         // Check for sanity decrease to trigger blood splatter
         if (currentSanity < previousSanity && !isSplatterActive)

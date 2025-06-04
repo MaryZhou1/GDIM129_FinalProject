@@ -11,9 +11,11 @@ public class ChapterTransition : MonoBehaviour
     public CanvasGroup canvasGroup;
 
     public float fadeInDuration = 1.5f;
-    public float holdDuration = 2f;
+    public float holdDuration = 1f;
     public float fadeOutDuration = 1.5f;
     public string nextSceneName = "GameScene"; // 你的第一章场景名
+
+    public GameObject NextSceneButton;
 
     void Start()
     {
@@ -33,15 +35,23 @@ public class ChapterTransition : MonoBehaviour
 
         yield return new WaitForSeconds(holdDuration);
 
-        // 淡出
-        t = 0f;
-        while (t < fadeOutDuration)
-        {
-            t += Time.deltaTime;
-            canvasGroup.alpha = Mathf.Lerp(1f, 0f, t / fadeOutDuration);
-            yield return null;
-        }
+        // button
+        NextSceneButton.SetActive(true);
 
+        // 淡出
+        //t = 0f;
+        //while (t < fadeOutDuration)
+        //{
+        //    t += Time.deltaTime;
+        //    canvasGroup.alpha = Mathf.Lerp(1f, 0f, t / fadeOutDuration);
+        //    yield return null;
+        //}
+
+
+    }
+
+    public void NextScene()
+    {
         // 切换到主游戏场景
         SceneManager.LoadScene(nextSceneName);
     }

@@ -3055,7 +3055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SanTxt: {fileID: 2038405550}
-  SanBar: {fileID: 608788461}
+  SanBar: {fileID: 1574246294}
 --- !u!1 &1107866189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,7 +4364,7 @@ GameObject:
   - component: {fileID: 1574246295}
   - component: {fileID: 1574246294}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: SanBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

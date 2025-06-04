@@ -1219,8 +1219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sanity: 10
-  SanTxt: {fileID: 2038405550}
-  SanBar: {fileID: 1574246294}
+  MaxSan: 10
   EndingIndex: 0
 --- !u!4 &344649607
 Transform:
@@ -4410,7 +4409,7 @@ GameObject:
   - component: {fileID: 1574246295}
   - component: {fileID: 1574246294}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: SanBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5241,6 +5240,7 @@ MonoBehaviour:
   - {fileID: 1887373906}
   - {fileID: 977841323}
   - {fileID: 1980285566}
+  sanUI: {fileID: 0}
   dialogue_active: 1
 --- !u!4 &1794403244
 Transform:
