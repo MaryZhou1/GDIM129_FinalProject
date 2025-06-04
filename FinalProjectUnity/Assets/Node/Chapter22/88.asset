@@ -41,3 +41,5 @@ MonoBehaviour:
   ChangeEndingIndex: 0
   SanChange: 0
   nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 21300000, guid: 3ee967d2a77aec84e8f951254ccb05d3, type: 3}
