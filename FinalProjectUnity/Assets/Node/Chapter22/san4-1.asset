@@ -29,3 +29,6 @@ MonoBehaviour:
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
   SanChange: -1
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 21300000, guid: 4f1d91568702b674997e9718c4f75de7, type: 3}
