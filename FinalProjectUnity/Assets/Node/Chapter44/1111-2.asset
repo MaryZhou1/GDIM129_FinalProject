@@ -10,22 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 55
+  m_Name: 1111-2
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - 'Below them, a line in faded Common reads:'
-  itemToGive: {fileID: 11400000, guid: 1fcd7e0655eb48a4481cfda67f4a4f43, type: 2}
+  - The thought slips in uninvited.
+  - What if Eli was right? What if it never left?
+  - The deeper you walk, the more the trees feel like watchers.
+  itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: You suddenly saw a man.
-    nextNode: {fileID: 11400000, guid: 45b9507307acbde4b9a5b37161bd1957, type: 2}
+  - line: 'You step into the clearing. '
+    nextNode: {fileID: 11400000, guid: 4732317473b5db54197b50ef331570b4, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   ChangeEndingIndex: 0
-  SanChange: 0
+  SanChange: -1
   nextSceneName: 
   itemPopupDescription: 
-  itemPopupImage: {fileID: 21300000, guid: 9aab4fe88b7c5ed46be519836f4d2299, type: 3}
+  itemPopupImage: {fileID: 0}

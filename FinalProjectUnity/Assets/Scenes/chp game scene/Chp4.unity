@@ -3356,7 +3356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue_manager: {fileID: 1794403243}
   dialogue_test1: {fileID: 11400000, guid: fe4b848aa149b9b47907966442012de3, type: 2}
-  prologue1: {fileID: 11400000, guid: 364d27368d1ab124f8bb8e31fcc1af7e, type: 2}
+  prologue1: {fileID: 11400000, guid: 606bd524e712bdc4e93533c82b1feef6, type: 2}
 --- !u!4 &1116265206
 Transform:
   m_ObjectHideFlags: 0

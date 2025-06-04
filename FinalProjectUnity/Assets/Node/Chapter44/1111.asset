@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
+  m_Name: 1111
+  m_EditorClassIdentifier: 
+  Speaker: Narrator
+  Lines:
+  - You followed the sign into a woodland.
+  - The woods are thicker than you remember.
+  - When you were a child, Eli used to say the Old God lived here.
+  - "But back then, it all just felt like a game\u2026"
+  itemToGive: {fileID: 0}
+  ReplyOptions:
+  - line: Maybe gods were just made up to scare children.
+    nextNode: {fileID: 11400000, guid: 361b8c8de82d5684a9e22e13a900877f, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: The Old God... does it still remember me?
+    nextNode: {fileID: 11400000, guid: 78632f45c9e50a6449949d463ce161a2, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: This place was never meant to exist.
+    nextNode: {fileID: 11400000, guid: c15eee3da86604745a9e46a4b1f0a5d6, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: 8f83dfeaf3c34ff4290f3d54205dc2f2, type: 3}
+  Image_Sprite: {fileID: 0}
+  ChangeEndingIndex: 0
+  SanChange: 0
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}
