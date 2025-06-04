@@ -5382,8 +5382,8 @@ MonoBehaviour:
   - {fileID: 1887373906}
   - {fileID: 977841323}
   - {fileID: 1980285566}
-  dialogueClickClip: {fileID: 0}
-  audioSource: {fileID: 0}
+  dialogueClickClip: {fileID: 8300000, guid: 748f248af87067d42a08811cd6efdfdd, type: 3}
+  audioSource: {fileID: 1415503702}
   sanUI: {fileID: 1091919237}
   dialogue_active: 1
 --- !u!4 &1794403244
