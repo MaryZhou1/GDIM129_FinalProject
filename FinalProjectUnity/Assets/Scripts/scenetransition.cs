@@ -14,7 +14,8 @@ public class ChapterTransition : MonoBehaviour
     public float holdDuration = 0.5f;
     public float fadeOutDuration = 0.5f;
     public string nextSceneName = "GameScene"; // 你的第一章场景名
-
+    public AudioSource audioSource;
+    public AudioClip clickSound;
     public GameObject NextSceneButton;
 
     void Start()
@@ -52,7 +53,10 @@ public class ChapterTransition : MonoBehaviour
 
     public void NextScene()
     {
-        // 切换到主游戏场景
+        if (audioSource && clickSound)
+            audioSource.PlayOneShot(clickSound);
+
         SceneManager.LoadScene(nextSceneName);
     }
+
 }
