@@ -203,7 +203,6 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
-        current_node = null;
         dialogue_active = false;
         dialoguePanel.SetActive(false);
 
@@ -217,6 +216,8 @@ public class DialogueManager : MonoBehaviour
         // 否则进入游戏结束，播放结局（最后一个node必须设置结局index！默认是结局0）
         GlobalManager.Instance.EndingIndex = current_node.EndingIndex;        
         GlobalManager.Instance.DisplayEnding();
+
+        current_node = null;
     }
 
 
