@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "DialogueNode", menuName = "Dialogue/DialogueNode", order = 1)]
@@ -22,9 +23,6 @@ public class DialogueNode : ScriptableObject
     public Sprite Background_Sprite;
     public Sprite Image_Sprite;
 
-    [Header("Ending Change")]
-    public int ChangeEndingIndex; // default 0 = no leading to ending
-
     [Header("San Change")]
     public int SanChange = 0; // defult 0 = no san change
 
@@ -35,7 +33,11 @@ public class DialogueNode : ScriptableObject
     [TextArea] public string itemPopupDescription;
     public Sprite itemPopupImage;
 
+    [Header("Audio")]
+    public AudioClip Audio;
 
+    [Header("Ending. For Last Node Only")]
+    public int EndingIndex; // default 0 = no leading to ending
 
     //[Header("not used...")]
     //public bool ProcessQuest;

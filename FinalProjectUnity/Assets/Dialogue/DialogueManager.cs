@@ -92,9 +92,9 @@ public class DialogueManager : MonoBehaviour
         if (current_node.Background_Sprite != null)
             Background.sprite = current_node.Background_Sprite;
 
-        // change ending
-        if (current_node.ChangeEndingIndex != 0)
-            GlobalManager.Instance.EndingIndex = current_node.ChangeEndingIndex;
+        //// change ending
+        //if (current_node.EndingIndex != 0)
+        //    GlobalManager.Instance.EndingIndex = current_node.EndingIndex;
 
         // change san
         if (current_node.SanChange != 0)
@@ -203,6 +203,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        current_node = null;
         dialogue_active = false;
         dialoguePanel.SetActive(false);
 
@@ -213,10 +214,9 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        // 否则进入默认结算逻辑
+        // 否则进入游戏结束，播放结局（最后一个node必须设置结局index！默认是结局0）
+        GlobalManager.Instance.EndingIndex = current_node.EndingIndex;        
         GlobalManager.Instance.DisplayEnding();
-
-        current_node = null;
     }
 
 

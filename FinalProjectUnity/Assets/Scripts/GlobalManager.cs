@@ -12,11 +12,6 @@ public class GlobalManager : MonoBehaviour
 
     public static GlobalManager Instance;
 
-    // public DialogueManager DialogueManager;
-    // public QuestManager QuestManager;
-
-    // public bool isPaused = true;
-
     [Header("PlayerStatus")]
     public int sanity = 10;
     public int MaxSan = 10;
@@ -24,7 +19,7 @@ public class GlobalManager : MonoBehaviour
 
 
     [Header("Ending")]
-    public int EndingIndex = 1;
+    public int EndingIndex = 1; // 储存玩家触发的结局index
 
 
 
@@ -58,8 +53,13 @@ public class GlobalManager : MonoBehaviour
 
     public void DisplayEnding()
     {
-        SceneManager.LoadScene("EndScene");
-
-        // EndingIndex = ending_index;
+        if (EndingIndex == 1)
+        {
+            // jump scare
+        }
+        else
+        {
+            SceneManager.LoadScene("EndScene");
+        }
     }
 }

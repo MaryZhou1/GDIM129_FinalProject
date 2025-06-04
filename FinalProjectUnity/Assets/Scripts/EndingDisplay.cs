@@ -13,6 +13,12 @@ public class EndingDisplay : MonoBehaviour
     private string ending3 = "You remember......done";
     private string ending4 = "You tried to think but everything is empty. You got a brain damange and died";
 
+    private string e0 = "Nothing";
+    private string e1 = "Sacrifice";
+    private string e2 = "Insane";
+    private string e3 = "Live";
+    private string e4 = "Death";
+
 
     void Start()
     {
