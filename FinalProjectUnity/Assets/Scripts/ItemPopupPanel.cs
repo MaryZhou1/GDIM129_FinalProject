@@ -47,7 +47,7 @@ public class ItemPopupPanel : MonoBehaviour
         Time.timeScale = 0f; // 可选暂停
         isActive = true;
     }
-    private void ClosePanel()
+    public void ClosePanel()
     {
         panel.SetActive(false);
         Time.timeScale = 1f;

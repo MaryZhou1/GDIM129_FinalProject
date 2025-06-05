@@ -194,12 +194,12 @@ public class DialogueManager : MonoBehaviour
         {
             if (DiceRolling(reply.DiceCheck_AC)) // call func
             {
-                reply.SuccessedNode.Lines[0] = "You rolled: " + tmp_dice_holder; // write on scriptable obj
+                reply.SuccessedNode.Lines[0] = "Passed (You rolled: " + tmp_dice_holder + ", AC: " + reply.DiceCheck_AC + ")"; // write on scriptable obj
                 StartDialogue(reply.SuccessedNode);
             }
             else
             {
-                reply.FailedNode.Lines[0] = "You rolled: " + tmp_dice_holder; // write on scriptable obj
+                reply.FailedNode.Lines[0] = "Failed (You rolled: " + tmp_dice_holder + ", AC: " + reply.DiceCheck_AC + ")"; // write on scriptable obj
                 StartDialogue(reply.FailedNode);
             }
         }
