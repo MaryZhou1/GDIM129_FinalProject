@@ -474,7 +474,7 @@ MonoBehaviour:
   fadeOutDuration: 1.5
   nextSceneName: Chp3
   audioSource: {fileID: 2014265794}
-  clickSound: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
+  clickSound: {fileID: 8300000, guid: 256072d6261e9f14c808510527b05744, type: 3}
   NextSceneButton: {fileID: 2096877583}
 --- !u!4 &842615384
 Transform:
@@ -717,7 +717,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307559263}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 748f248af87067d42a08811cd6efdfdd, type: 3}

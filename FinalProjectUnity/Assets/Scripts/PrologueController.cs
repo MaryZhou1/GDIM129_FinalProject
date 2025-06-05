@@ -3,8 +3,13 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+
 public class PrologueWithLetter : MonoBehaviour
 {
+    [Header("Letter Sound")]
+    public AudioClip letterOpenSound;
+    public AudioSource audioSource;
+
     public TextMeshProUGUI[] lines;
     public GameObject letterButton;
     public GameObject letterPanel;
@@ -47,6 +52,12 @@ public class PrologueWithLetter : MonoBehaviour
 
     public void OpenLetter()
     {
+        // 播放信件开启音效
+        if (audioSource != null && letterOpenSound != null)
+        {
+            audioSource.PlayOneShot(letterOpenSound);
+        }
+
         letterText.text = letterContent;
         letterPanel.SetActive(true);
         letterOpen = true;

@@ -21,7 +21,9 @@ public class SanityEffects : MonoBehaviour
     private int previousSanity; // Track previous sanity value to detect decreases
 
     private bool isBlurActive = false; // Track if blur is currently active
-
+    [Header("Blood Splatter Sound")]
+    public AudioClip bloodSplatterSound; // 血迹音效剪辑
+    public AudioSource audioSource; // 播放音效的 AudioSource
     private void Start()
     {
         // Initialize blur material
@@ -121,20 +123,29 @@ public class SanityEffects : MonoBehaviour
     }
 
     // Coroutine to show and fade blood splatter
+    // Coroutine to show and fade blood splatter
     private IEnumerator ShowBloodSplatter()
     {
         if (bloodSplatterImage == null || bloodSplatters.Length == 0) yield break;
 
         isSplatterActive = true;
 
-        // Randomly select a blood splatter sprite
+        // 选择随机血迹贴图
         int randomIndex = Random.Range(0, bloodSplatters.Length);
         bloodSplatterImage.sprite = bloodSplatters[randomIndex];
 
-        // Fade in
+        // 设置并播放音效（不循环）
+        if (audioSource != null && bloodSplatterSound != null)
+        {
+            audioSource.clip = bloodSplatterSound;
+            audioSource.loop = false;
+            audioSource.Play();
+        }
+
+        // Fade In
         float elapsedTime = 0f;
         Color startColor = bloodSplatterImage.color;
-        Color targetColor = new Color(1f, 1f, 1f, 0.7f); // Semi-transparent for visibility
+        Color targetColor = new Color(1f, 1f, 1f, 0.7f);
 
         while (elapsedTime < splatterFadeDuration)
         {
@@ -146,13 +157,13 @@ public class SanityEffects : MonoBehaviour
 
         bloodSplatterImage.color = targetColor;
 
-        // Hold the splatter for a duration
+        // 显示一段时间
         yield return new WaitForSeconds(splatterDisplayTime);
 
-        // Fade out
+        // Fade Out
         elapsedTime = 0f;
         startColor = bloodSplatterImage.color;
-        targetColor = new Color(1f, 1f, 1f, 0f); // Fully transparent
+        targetColor = new Color(1f, 1f, 1f, 0f);
 
         while (elapsedTime < splatterFadeDuration)
         {
@@ -163,6 +174,13 @@ public class SanityEffects : MonoBehaviour
         }
 
         bloodSplatterImage.color = targetColor;
+
+        // 音效结束
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+
         isSplatterActive = false;
     }
 }

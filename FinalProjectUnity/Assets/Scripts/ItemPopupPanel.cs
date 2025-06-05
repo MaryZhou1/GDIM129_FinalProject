@@ -4,6 +4,10 @@ using UnityEngine.UI;
 
 public class ItemPopupPanel : MonoBehaviour
 {
+    [Header("Popup Sound")]
+    public AudioClip popupSound;
+    public AudioSource audioSource;
+
     public static ItemPopupPanel Instance;
 
     public GameObject panel;
@@ -30,6 +34,12 @@ public class ItemPopupPanel : MonoBehaviour
 
     public void ShowItem(Sprite image, string description, System.Action callback = null)
     {
+        // 播放弹出音效
+        if (audioSource != null && popupSound != null)
+        {
+            audioSource.PlayOneShot(popupSound);
+        }
+
         itemImage.sprite = image;
         itemDescription.text = description;
         onCloseCallback = callback;
@@ -37,7 +47,6 @@ public class ItemPopupPanel : MonoBehaviour
         Time.timeScale = 0f; // 可选暂停
         isActive = true;
     }
-
     private void ClosePanel()
     {
         panel.SetActive(false);
