@@ -10,26 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 2
+  m_Name: "\u9003\u79BB"
   m_EditorClassIdentifier: 
-  Speaker: Villager
+  Speaker: Narrator
   Lines:
-  - ' "The priest says... you''re ready." '
+  - 'Your chest tightens, but your steps are steady. '
+  - "This time, it\u2019s not faith or fear that leads you\u2014it\u2019s clarity.
+    Someone has to end the cycle."
   itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: "I\u2019ll go. But not for your god."
-    nextNode: {fileID: 11400000, guid: 282a7311e20b5254d9c976275fd1b13b, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  - line: "I\u2026 still need to understand."
-    nextNode: {fileID: 11400000, guid: 6bea7477cd2a2e54d94ab40945eeacd4, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  - line: "It\u2019s time to end this."
-    nextNode: {fileID: 11400000, guid: 434c4d9150fd4054488234f5c9a944f3, type: 2}
-    DiceCheck_AC: 0
+  - line: You stepped on your way to church.
+    nextNode: {fileID: 11400000, guid: 616f12d2d1bf7c440a092e245e28a21a, type: 2}
+    DiceCheck_AC: -853
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}

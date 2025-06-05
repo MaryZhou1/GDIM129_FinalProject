@@ -29,7 +29,7 @@ public class EndingDisplay : MonoBehaviour
                 EndingDescription.text = "AAAA";
                 break;
             case 2:
-                EndingTitle.text = "Your End: ENDING TEST 1";
+                EndingTitle.text = "Your End: ENDING TEST 2";
                 EndingDescription.text = "BBBB";
                 break;
 

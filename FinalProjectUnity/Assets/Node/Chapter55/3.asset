@@ -10,18 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: "\u7ED3\u5C40test1"
+  m_Name: 3
   m_EditorClassIdentifier: 
-  Speaker: 
+  Speaker: Narrator
   Lines:
-  - ' ending 1...'
+  - 'The rain falls on your skin, cold and sharp. '
+  - "Each step feels like you\u2019re walking through the shadows of your past. "
+  - "Tonight isn't a return\u2014it's a rebirth. "
   itemToGive: {fileID: 0}
   ReplyOptions: []
-  Background_Sprite: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: 3333209511114a147b2089f34a8e31ee, type: 3}
   Image_Sprite: {fileID: 0}
   SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}
   Audio: {fileID: 0}
-  EndingIndex: 1
+  EndingIndex: 0

@@ -10,41 +10,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 3
+  m_Name: "\u9009\u62E9\u7ED3\u5C40"
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - 'The rain falls on your skin, cold and sharp. '
-  - "Each step feels like you\u2019re walking through the shadows of your past. "
-  - "Tonight isn't a return\u2014it's a rebirth. "
+  - "\u3010your choice and your sanity will affect your ending\u3011"
   itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: Eli, wait for me!
-    nextNode: {fileID: 0}
+  - line: "I\u2019ll go. But not for your god."
+    nextNode: {fileID: 11400000, guid: 282a7311e20b5254d9c976275fd1b13b, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  - line: You're not real.
-    nextNode: {fileID: 0}
+  - line: "I\u2026 still need to understand."
+    nextNode: {fileID: 11400000, guid: 6bea7477cd2a2e54d94ab40945eeacd4, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  - line: "I knew we\u2019d meet again."
-    nextNode: {fileID: 0}
+  - line: "It\u2019s time to end this."
+    nextNode: {fileID: 11400000, guid: 434c4d9150fd4054488234f5c9a944f3, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  - line: end1
-    nextNode: {fileID: 11400000, guid: bf16a73c549c4a441b2498088f0a86ae, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  - line: end2
-    nextNode: {fileID: 11400000, guid: 4bc96084e0891234eb1697ae5d0badc7, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  Background_Sprite: {fileID: 21300000, guid: 3333209511114a147b2089f34a8e31ee, type: 3}
+  Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   SanChange: 0
   nextSceneName: 
