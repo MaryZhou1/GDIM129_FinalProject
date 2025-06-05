@@ -43,6 +43,8 @@ public class DialogueManager : MonoBehaviour
     public Item itemToGive;
     public List<Image> itemSlots; // 在 Inspector 里拖进3个Image格子
     private List<Item> acquiredItems = new List<Item>();
+
+    [Header("audio")]
     public AudioClip dialogueClickClip;      // 你的 .wav 文件
     public AudioSource audioSource;          // 用于播放 clip 的 audioSource
 
@@ -116,6 +118,12 @@ public class DialogueManager : MonoBehaviour
                 });
         }
 
+        //                   ----------- extra audio  -------
+
+        if (current_node.Audio != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(current_node.Audio);
+        }
 
 
         //                   -------  start line  -------

@@ -19,6 +19,9 @@ MonoBehaviour:
   ReplyOptions: []
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
   SanChange: 0
   nextSceneName: CHP2Transition
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 01af41b6ccf1f3747af5b60b310d2fbc, type: 3}
+  EndingIndex: 0

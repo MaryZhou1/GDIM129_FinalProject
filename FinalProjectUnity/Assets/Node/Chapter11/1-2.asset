@@ -16,8 +16,8 @@ MonoBehaviour:
   Lines:
   - "Strange time to come back\u2026 especially with the tide shifting. "
   - "Whatever you\u2019re looking for... it might just be looking back at you."
-  - "\"Stay close. The island isn\u2019t what it used to be."
-  - 
+  - "Stay close. The island isn\u2019t what it used to be."
+  itemToGive: {fileID: 0}
   ReplyOptions:
   - line: You said goodbye to the ferryman. Step on the island.
     nextNode: {fileID: 11400000, guid: c559c576199797b408f863ff1f3ecb15, type: 2}
@@ -26,5 +26,9 @@ MonoBehaviour:
     FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
   SanChange: -1
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}
+  Audio: {fileID: 0}
+  EndingIndex: 0
