@@ -28,17 +28,17 @@ public class EndingDisplay : MonoBehaviour
         switch (GlobalManager.Instance.EndingIndex)
         {
             case 1:
-                EndingTitle.text = "Your End: Insane";
-                EndingDescription.text = "Insane...";
+                EndingTitle.text = "You called out for truth¡ª\nBut it never came.\n\nThe ritual began, and never ended.\nNow the voices won't stop.\nNot even in the dark.";
+                EndingDescription.text = "Your End: Insane" ;
                 break;
             case 2:
-                EndingTitle.text = "Your End: Sacrifice";
-                EndingDescription.text = "Sacrifice...";
+                EndingTitle.text = "The villagers prayed.\nThe altar burned.\nYou did not resist.\n\nThe tide was calm.\nBut your name was never spoken again.";
+                EndingDescription.text = "Your End: Sacrifice" ;
                 break;
 
             case 3:
-                EndingDescription.text = "Your End: Live";
-                EndingTitle.text = "Live...";
+                EndingDescription.text = "You escaped the island.\nBut not the memories.\n\nIn time, you turned the story into a novel...\nYet the last page is still missing.";
+                EndingTitle.text = "Your End: Survived"; 
                 break;
         }
 

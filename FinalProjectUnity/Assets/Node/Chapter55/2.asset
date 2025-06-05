@@ -28,5 +28,5 @@ MonoBehaviour:
   nextSceneName: 
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}
-  Audio: {fileID: 0}
+  Audio: {fileID: 8300000, guid: dd895b488f9c1dd489e28bf369ad2fb1, type: 3}
   EndingIndex: 0

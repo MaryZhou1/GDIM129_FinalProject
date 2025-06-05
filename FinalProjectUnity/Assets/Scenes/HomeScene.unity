@@ -180,7 +180,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Press [Space] to continue dialogue\nClick on dialogue choices to respond\n
-    Press [Esc] to close items\n\n"
+    Press [Continue] to close items\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e1e2b6e70d59eb343b8928c8f0b1dc02, type: 2}
   m_sharedMaterial: {fileID: 4498729343248305116, guid: e1e2b6e70d59eb343b8928c8f0b1dc02, type: 2}
@@ -1561,7 +1561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -53}
+  m_AnchoredPosition: {x: -0.013611, y: -40.172}
   m_SizeDelta: {x: -364.70197, y: -234.69763}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &878278018
