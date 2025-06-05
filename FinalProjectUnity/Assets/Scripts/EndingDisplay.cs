@@ -22,6 +22,9 @@ public class EndingDisplay : MonoBehaviour
 
     void Start()
     {
+        GlobalManager.Instance.Chapter = 0; // reset
+
+
         switch (GlobalManager.Instance.EndingIndex)
         {
             case 1:
