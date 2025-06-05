@@ -25,8 +25,9 @@ MonoBehaviour:
   ReplyOptions: []
   Background_Sprite: {fileID: 21300000, guid: 11ea365c9651dd742a9e6d60b329a543, type: 3}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
   SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}
+  Audio: {fileID: 0}
+  EndingIndex: 2

@@ -10,24 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: "\u732E\u796D"
+  m_Name: "\u75AF\u72C23 (\u7ED3\u5C401)"
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - "Your hands are shaking. You don\u2019t know if it\u2019s anger, desperation,
-    or something else."
-  - "But you\u2019re done running. If this is how it ends, so be it.  "
+  - "You see versions of yourself circling the altar, each one whispering something
+    you can\u2019t quite hear. "
+  - 'The world begins to unravel. '
+  - 'The text itself peels away from the screen,  page by page, sentence by sentence,
+    flying into the void. '
   itemToGive: {fileID: 0}
-  ReplyOptions:
-  - line: You stepped on your way to church.
-    nextNode: {fileID: 11400000, guid: 616f12d2d1bf7c440a092e245e28a21a, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  Background_Sprite: {fileID: 0}
+  ReplyOptions: []
+  Background_Sprite: {fileID: 21300000, guid: 4a70a321f2368be4fbcb68dfae948338, type: 3}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
-  SanChange: -1
+  SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}
+  Audio: {fileID: 0}
+  EndingIndex: 1

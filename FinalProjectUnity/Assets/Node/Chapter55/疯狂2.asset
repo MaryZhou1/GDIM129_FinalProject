@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 1
+  m_Name: "\u75AF\u72C22"
   m_EditorClassIdentifier: 
-  Speaker: Narrator
+  Speaker: Villager
   Lines:
-  - "Dreams, visions, memories\u2026 you can barely tell them apart now. "
-  - "Someone once said\u2026 tonight is the night of decision. "
+  - The Villager came in. They are saying something, but you can't even hear it clear
   itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: Villager knocks from behind the door
-    nextNode: {fileID: 11400000, guid: d543a0ad5a3844840b9f1457edecdd1f, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  Background_Sprite: {fileID: 21300000, guid: 4a70a321f2368be4fbcb68dfae948338, type: 3}
+  - line: My thoughts are tangled... The lines between Eli ... the island ... and
+      myself are blurring. (san check)
+    nextNode: {fileID: 0}
+    DiceCheck_AC: 999
+    SuccessedNode: {fileID: 11400000, guid: 8320cb047e5576c468b3aae24d9b0c81, type: 2}
+    FailedNode: {fileID: 11400000, guid: 8320cb047e5576c468b3aae24d9b0c81, type: 2}
+  Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   SanChange: 0
   nextSceneName: 

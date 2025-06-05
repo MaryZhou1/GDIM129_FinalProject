@@ -10,24 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: "\u9003\u79BB"
+  m_Name: "\u75AF\u72C21"
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - 'Your chest tightens, but your steps are steady. '
-  - "This time, it\u2019s not faith or fear that leads you\u2014it\u2019s clarity.
-    Someone has to end the cycle."
+  - "Dreams, visions, memories\u2026 you can barely tell them apart now. "
+  - "Someone once said\u2026 tonight is the night of decision. "
+  - BUT DO YOU EVEN HAVE A DECISION?
   itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: You stepped on your way to church.
-    nextNode: {fileID: 11400000, guid: 616f12d2d1bf7c440a092e245e28a21a, type: 2}
-    DiceCheck_AC: -853
+  - line: Villager knocks from behind the door
+    nextNode: {fileID: 11400000, guid: 3620720e3fbf48145b2f7676626ded87, type: 2}
+    DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  Background_Sprite: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: 4a70a321f2368be4fbcb68dfae948338, type: 3}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
   SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}
+  Audio: {fileID: 0}
+  EndingIndex: 0

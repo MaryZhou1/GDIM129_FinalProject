@@ -56,6 +56,11 @@ public class ChapterTransition : MonoBehaviour
         if (audioSource && clickSound)
             audioSource.PlayOneShot(clickSound);
 
+        if (nextSceneName == "Chp5")
+        {
+            GlobalManager.Instance.Chapter = 5; //用于结局！！！！！！！！
+        }
+
         SceneManager.LoadScene(nextSceneName);
     }
 

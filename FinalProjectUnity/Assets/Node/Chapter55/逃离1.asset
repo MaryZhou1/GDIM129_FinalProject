@@ -10,16 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: 3
+  m_Name: "\u9003\u79BB1"
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - 'The rain falls on your skin, cold and sharp. '
-  - "Each step feels like you\u2019re walking through the shadows of your past. "
-  - "Tonight isn't a return\u2014it's a rebirth. "
+  - 'Your chest tightens, but your steps are steady. '
+  - "This time, it\u2019s not faith or fear that leads you\u2014it\u2019s clarity.
+    Someone has to end the cycle."
   itemToGive: {fileID: 0}
-  ReplyOptions: []
-  Background_Sprite: {fileID: 21300000, guid: 3333209511114a147b2089f34a8e31ee, type: 3}
+  ReplyOptions:
+  - line: You stepped on your way to church.
+    nextNode: {fileID: 11400000, guid: 455fe1ab5518af34481462ebcd4b2d2b, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   SanChange: 0
   nextSceneName: 

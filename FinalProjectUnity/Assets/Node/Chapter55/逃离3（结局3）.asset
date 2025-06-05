@@ -10,23 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: "\u7ED3\u5C401\uFF1A\u75AF\u72C2"
+  m_Name: "\u9003\u79BB3\uFF08\u7ED3\u5C403\uFF09"
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - YOU DON'T EVEN HAVE THE CHOICE
-  - "You see versions of yourself circling the altar, each one whispering something
-    you can\u2019t quite hear. "
-  - 'The world begins to unravel. '
-  - 'The text itself peels away from the screen,  page by page, sentence by sentence,
-    flying into the void. '
+  - 'Alone, you board the ferry and leave the island behind. '
+  - "The screen fades\u2014 A book cover appears:  \u201CShadows in the Tide\u201D, "
+  - ' authored by someone who now knows the truth. '
   itemToGive: {fileID: 0}
   ReplyOptions: []
-  Background_Sprite: {fileID: 21300000, guid: 9d8e1345b412bcf47b951e1264725f1f, type: 3}
+  Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
   SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
-  itemPopupImage: {fileID: 0}
+  itemPopupImage: {fileID: 21300000, guid: 50bd4d74252d896469024a6b30779200, type: 3}
   Audio: {fileID: 0}
-  EndingIndex: 1
+  EndingIndex: 3

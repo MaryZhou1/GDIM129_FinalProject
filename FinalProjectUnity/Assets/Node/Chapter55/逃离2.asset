@@ -10,29 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
-  m_Name: "\u9009\u62E9\u7ED3\u5C40"
+  m_Name: "\u9003\u79BB2"
   m_EditorClassIdentifier: 
   Speaker: Narrator
   Lines:
-  - "\u3010your choice and your sanity will affect your ending\u3011"
+  - 'You step forward, pulling from your bag the journal, the shattered piece of
+    the statue, and the faded photograph. '
+  - "You raise your voice:  \u201CThe god you worship... never answered you.\u201D "
+  - 'You strike a match and set the old scripture alight. '
+  - 'The ritual collapses. The wind dies. '
   itemToGive: {fileID: 0}
   ReplyOptions:
-  - line: "I\u2019ll go. But not for your god."
-    nextNode: {fileID: 11400000, guid: 282a7311e20b5254d9c976275fd1b13b, type: 2}
+  - line: You ran away successfully.
+    nextNode: {fileID: 11400000, guid: fb3eafbb08f4d1d4fbee890edad4f772, type: 2}
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
-  - line: "I\u2026 still need to understand."
-    nextNode: {fileID: 11400000, guid: 6bea7477cd2a2e54d94ab40945eeacd4, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  - line: "It\u2019s time to end this."
-    nextNode: {fileID: 11400000, guid: 434c4d9150fd4054488234f5c9a944f3, type: 2}
-    DiceCheck_AC: 0
-    SuccessedNode: {fileID: 0}
-    FailedNode: {fileID: 0}
-  Background_Sprite: {fileID: 0}
+  Background_Sprite: {fileID: 21300000, guid: 50bd4d74252d896469024a6b30779200, type: 3}
   Image_Sprite: {fileID: 0}
   SanChange: 0
   nextSceneName: 

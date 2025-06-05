@@ -22,7 +22,8 @@ public class GlobalManager : MonoBehaviour
     public int EndingIndex = 1; // 储存玩家触发的结局index
 
 
-
+    [Header("Ending")]
+    public int Chapter = 0; // 只用于chapter5！！！
 
 
     private void Awake()
