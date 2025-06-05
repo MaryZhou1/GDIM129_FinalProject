@@ -15,20 +15,6 @@ public class DialogueManager : MonoBehaviour
     // manage dialogue
 
 
-    //public static DialogueManager Instance;
-    //private void Awake()
-    //{
-    //    if (Instance == null)
-    //    {
-    //        Instance = this;
-    //        DontDestroyOnLoad(gameObject);
-    //    }
-    //    else
-    //    {
-    //        Destroy(gameObject);
-    //    }
-    //}
-
     [Header("UI")]
     public GameObject dialoguePanel;
 
@@ -64,6 +50,7 @@ public class DialogueManager : MonoBehaviour
         {
             NextLine();
         }
+        // can't use left click, will mess up with choices
     }
 
     public void StartDialogue(DialogueNode node)

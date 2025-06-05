@@ -12,7 +12,7 @@ public class SanityUI : MonoBehaviour
     public Image SanBar;
 
     // fields
-    private int max_san = 10;
+    private int max_san = 12;
     private int current_san = 0;
     private float initialWidth = 137.44f;
 
