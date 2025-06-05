@@ -5321,7 +5321,7 @@ MonoBehaviour:
   replyButtonPrefab: {fileID: 7353441552767873454, guid: 6f399193b22bb784b8089bfdb6de93da, type: 3}
   itemToGive: {fileID: 0}
   itemSlots: []
-  dialogueClickClip: {fileID: 8300000, guid: 748f248af87067d42a08811cd6efdfdd, type: 3}
+  dialogueClickClip: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
   audioSource: {fileID: 1813350941}
   sanUI: {fileID: 1091919237}
   dialogue_active: 1
@@ -5367,9 +5367,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 748f248af87067d42a08811cd6efdfdd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.216
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -4429,7 +4429,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 748f248af87067d42a08811cd6efdfdd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1

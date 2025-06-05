@@ -607,7 +607,7 @@ MonoBehaviour:
   fadeOutDuration: 1.5
   nextSceneName: Chp1
   audioSource: {fileID: 1380988731}
-  clickSound: {fileID: 8300000, guid: 256072d6261e9f14c808510527b05744, type: 3}
+  clickSound: {fileID: 8300000, guid: 60e3d4e89da07974eae4f980b97970ba, type: 3}
   NextSceneButton: {fileID: 753914837}
 --- !u!4 &842615384
 Transform:

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: "\u7ED3\u5C40test2"
   m_EditorClassIdentifier: 
   Speaker: 
-  Lines: []
+  Lines:
+  - Ending 2 ...
   itemToGive: {fileID: 0}
   ReplyOptions: []
   Background_Sprite: {fileID: 0}
@@ -23,4 +24,4 @@ MonoBehaviour:
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}
   Audio: {fileID: 0}
-  EndingIndex: 0
+  EndingIndex: 2

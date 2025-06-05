@@ -67,6 +67,13 @@ public class PrologueWithLetter : MonoBehaviour
     {
         if (!letterClosed)
         {
+            // 播放信件开启音效
+            if (audioSource != null && letterOpenSound != null)
+            {
+                audioSource.PlayOneShot(letterOpenSound);
+            }
+
+
             letterPanel.SetActive(false);
             letterOpen = false;
             letterClosed = true;
@@ -104,5 +111,16 @@ public class PrologueWithLetter : MonoBehaviour
             text.alpha = Mathf.Lerp(0, 1, t / fadeTime);
             yield return null;
         }
+    }
+
+    public void Skip()
+    {
+        // 播放信件开启音效
+        if (audioSource != null && letterOpenSound != null)
+        {
+            audioSource.PlayOneShot(letterOpenSound);
+        }
+
+        SceneManager.LoadScene(nextScene);
     }
 }

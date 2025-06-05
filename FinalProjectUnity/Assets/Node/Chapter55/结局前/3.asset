@@ -34,10 +34,21 @@ MonoBehaviour:
     DiceCheck_AC: 0
     SuccessedNode: {fileID: 0}
     FailedNode: {fileID: 0}
+  - line: end1
+    nextNode: {fileID: 11400000, guid: bf16a73c549c4a441b2498088f0a86ae, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
+  - line: end2
+    nextNode: {fileID: 11400000, guid: 4bc96084e0891234eb1697ae5d0badc7, type: 2}
+    DiceCheck_AC: 0
+    SuccessedNode: {fileID: 0}
+    FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 21300000, guid: 3333209511114a147b2089f34a8e31ee, type: 3}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
   SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}
+  Audio: {fileID: 0}
+  EndingIndex: 0
