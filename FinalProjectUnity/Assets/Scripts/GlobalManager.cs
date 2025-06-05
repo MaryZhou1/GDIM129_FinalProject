@@ -51,15 +51,35 @@ public class GlobalManager : MonoBehaviour
         // isPaused = true;
     }
 
+
+    //private string e0 = "Nothing";
+    //private string e1 = "Sacrifice";
+    //private string e2 = "Insane";
+    //private string e3 = "flead";
+
     public void DisplayEnding()
     {
         if (EndingIndex == 1)
         {
-            // jump scare
+            if (sanity > 2)
+            {
+                SceneManager.LoadScene("EndScene");
+            }
+            else
+            {
+                SceneManager.LoadScene("Jumpscare");
+            }
         }
-        else
+        else if (EndingIndex == 2)
         {
-            SceneManager.LoadScene("EndScene");
+            if (sanity > 2)
+            {
+                SceneManager.LoadScene("EndScene");
+            }
+            else
+            {
+                SceneManager.LoadScene("Jumpscare");
+            }
         }
     }
 }
