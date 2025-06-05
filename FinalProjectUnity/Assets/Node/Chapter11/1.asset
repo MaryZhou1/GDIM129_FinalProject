@@ -16,6 +16,7 @@ MonoBehaviour:
   Lines:
   - "Not many folks come back here after dark. You really came all this way\u2026
     to see someone?"
+  itemToGive: {fileID: 0}
   ReplyOptions:
   - line: He was my childhood friend. Eli. Do you know him?
     nextNode: {fileID: 11400000, guid: 521b809ceba7ad940a671a52d586ce3b, type: 2}
@@ -34,5 +35,9 @@ MonoBehaviour:
     FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 21300000, guid: 543d9ecf325700e4ab64ce4e79d03b3a, type: 3}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
   SanChange: 0
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 3b354eea54847f34bb200cdfff4c3b44, type: 3}
+  EndingIndex: 0
