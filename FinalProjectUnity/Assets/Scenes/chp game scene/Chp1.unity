@@ -1219,8 +1219,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3e29b1e55f209c4d856cf590cf81255, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sanity: 10
-  MaxSan: 10
+  sanity: 12
+  MaxSan: 12
   EndingIndex: 0
   Chapter: 0
 --- !u!4 &344649607
@@ -6415,7 +6415,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'San: 10'
+  m_text: 'San: 12'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4119f946c57f63c45bf5ddc5fb048e86, type: 2}
   m_sharedMaterial: {fileID: -1162667548212151831, guid: 4119f946c57f63c45bf5ddc5fb048e86, type: 2}

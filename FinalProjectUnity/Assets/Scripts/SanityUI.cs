@@ -24,8 +24,9 @@ public class SanityUI : MonoBehaviour
 
     public void UpdateSanity()
     {
-        SanTxt.text = current_san.ToString();
+        SanTxt.text = "San: " + current_san.ToString();
         float fillAmount = (float)current_san / (float)max_san;
+        // Debug.Log("Fill Amount: " + fillAmount);
         SanBar.rectTransform.sizeDelta = new Vector2(initialWidth * fillAmount, SanBar.rectTransform.sizeDelta.y);
     }
 
@@ -35,11 +36,8 @@ public class SanityUI : MonoBehaviour
         current_san = GlobalManager.Instance.sanity;
 
         Debug.Log($"Sanity changed to: {current_san} (Change: {change}) - Caller: {new System.Diagnostics.StackTrace().GetFrame(1).GetMethod().Name}", this);
-        
+
         //UI
-        SanTxt.text = current_san.ToString();
-        float fillAmount = (float)current_san / (float)max_san;
-        Debug.Log("Fill Amount: " + fillAmount);
-        SanBar.rectTransform.sizeDelta = new Vector2(initialWidth * fillAmount, SanBar.rectTransform.sizeDelta.y);
+        UpdateSanity();
     }
 }
