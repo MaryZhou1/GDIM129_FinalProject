@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f3f71af4cdc0548b4a939a2df25b6b, type: 3}
   m_Name: san6-2
   m_EditorClassIdentifier: 
-  Speaker: 
+  Speaker: Narrator
   Lines:
-  - 
+  - 'Failed (You rolled: 6, AC: 10)'
   - "The words on the page seem to crawl, twisting into shapes that shouldn\u2019t
     be."
   - Your pulse spikes.
@@ -28,8 +28,9 @@ MonoBehaviour:
     FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
   SanChange: -2
   nextSceneName: 
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}
+  Audio: {fileID: 0}
+  EndingIndex: 0

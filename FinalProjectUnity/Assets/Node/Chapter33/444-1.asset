@@ -29,8 +29,9 @@ MonoBehaviour:
     FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
-  SanChange: -1
+  SanChange: 0
   nextSceneName: 
   itemPopupDescription: 
   itemPopupImage: {fileID: 0}
+  Audio: {fileID: 0}
+  EndingIndex: 0
