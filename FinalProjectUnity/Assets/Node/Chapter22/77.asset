@@ -36,5 +36,9 @@ MonoBehaviour:
     FailedNode: {fileID: 0}
   Background_Sprite: {fileID: 0}
   Image_Sprite: {fileID: 0}
-  ChangeEndingIndex: 0
   SanChange: 0
+  nextSceneName: 
+  itemPopupDescription: 
+  itemPopupImage: {fileID: 0}
+  Audio: {fileID: 8300000, guid: 982608fe9feae4847b7a6edb3256062e, type: 3}
+  EndingIndex: 0
