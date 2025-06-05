@@ -60,27 +60,28 @@ public class GlobalManager : MonoBehaviour
 
     public void DisplayEnding()
     {
-        if (EndingIndex == 1)
-        {
-            if (sanity > 2)
-            {
-                SceneManager.LoadScene("EndScene");
-            }
-            else
-            {
-                SceneManager.LoadScene("Jumpscare");
-            }
-        }
-        else if (EndingIndex == 2)
-        {
-            if (sanity > 2)
-            {
-                SceneManager.LoadScene("EndScene");
-            }
-            else
-            {
-                SceneManager.LoadScene("Jumpscare");
-            }
-        }
+        SceneManager.LoadScene("EndScene");
+        //if (EndingIndex == 1)
+        //{
+        //    if (sanity > 2)
+        //    {
+        //        SceneManager.LoadScene("EndScene");
+        //    }
+        //    else
+        //    {
+        //        SceneManager.LoadScene("Jumpscare");
+        //    }
+        //}
+        //else if (EndingIndex == 2)
+        //{
+        //    if (sanity > 2)
+        //    {
+        //        SceneManager.LoadScene("EndScene");
+        //    }
+        //    else
+        //    {
+        //        SceneManager.LoadScene("Jumpscare");
+        //    }
+        //}
     }
 }

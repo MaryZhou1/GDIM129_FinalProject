@@ -25,21 +25,17 @@ public class EndingDisplay : MonoBehaviour
         switch (GlobalManager.Instance.EndingIndex)
         {
             case 1:
-                EndingTitle.text = "Your End: ENDING TEST 1";
-                EndingDescription.text = "AAAA";
+                EndingTitle.text = "Your End: Insane";
+                EndingDescription.text = "Insane...";
                 break;
             case 2:
-                EndingTitle.text = "Your End: ENDING TEST 2";
-                EndingDescription.text = "BBBB";
+                EndingTitle.text = "Your End: Sacrifice";
+                EndingDescription.text = "Sacrifice...";
                 break;
 
             case 3:
-                EndingDescription.text = ending3;
-                EndingTitle.text = "Your End: 3";
-                break;
-            case 4:
-                EndingDescription.text = ending4;
-                EndingTitle.text = "Your End: 4";
+                EndingDescription.text = "Your End: Live";
+                EndingTitle.text = "Live...";
                 break;
         }
 
