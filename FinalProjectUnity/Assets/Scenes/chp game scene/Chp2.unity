@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 254480545}
   - component: {fileID: 254480544}
   m_Layer: 0
-  m_Name: click
+  m_Name: AudioS_click
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -667,7 +667,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.428
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1275,6 +1275,7 @@ MonoBehaviour:
   sanity: 10
   MaxSan: 10
   EndingIndex: 0
+  Chapter: 0
 --- !u!4 &344649607
 Transform:
   m_ObjectHideFlags: 0
@@ -3371,6 +3372,134 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SanTxt: {fileID: 2038405550}
   SanBar: {fileID: 1574246294}
+--- !u!1 &1097440175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097440177}
+  - component: {fileID: 1097440176}
+  m_Layer: 0
+  m_Name: AudioS_extra
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1097440176
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097440175}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1097440177
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097440175}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 738.20703, y: 370.8767, z: -3.5026677}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107866189
 GameObject:
   m_ObjectHideFlags: 0
@@ -3538,6 +3667,8 @@ MonoBehaviour:
   dialogue_manager: {fileID: 1794403243}
   dialogue_test1: {fileID: 11400000, guid: fe4b848aa149b9b47907966442012de3, type: 2}
   prologue1: {fileID: 11400000, guid: 05d38e1c590289640ac33d110325a15c, type: 2}
+  LowSanEnd: {fileID: 0}
+  HighSanEnd: {fileID: 0}
 --- !u!4 &1116265206
 Transform:
   m_ObjectHideFlags: 0
@@ -4407,7 +4538,7 @@ GameObject:
   - component: {fileID: 1413538534}
   - component: {fileID: 1413538533}
   m_Layer: 0
-  m_Name: BGM2
+  m_Name: AudioS_BGM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5741,7 +5872,8 @@ MonoBehaviour:
   - {fileID: 977841323}
   - {fileID: 1980285566}
   dialogueClickClip: {fileID: 8300000, guid: a106c048ab6601c48ab16445a48fcc7d, type: 3}
-  audioSource: {fileID: 254480544}
+  audioSource_click: {fileID: 254480544}
+  audioSource_extra: {fileID: 1097440176}
   sanUI: {fileID: 1091919237}
   dialogue_active: 1
 --- !u!4 &1794403244
@@ -7052,4 +7184,5 @@ SceneRoots:
   - {fileID: 1794403244}
   - {fileID: 1413538534}
   - {fileID: 254480545}
+  - {fileID: 1097440177}
   - {fileID: 897427849}

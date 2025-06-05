@@ -46,7 +46,9 @@ public class DialogueManager : MonoBehaviour
 
     [Header("audio")]
     public AudioClip dialogueClickClip;      // 你的 .wav 文件
-    public AudioSource audioSource;          // 用于播放 clip 的 audioSource
+    public AudioSource audioSource_click;          // 用于播放 clip 的 audioSource
+    public AudioSource audioSource_extra;          // 用于播放 clip 的 audioSource
+
 
     // =================
     public SanityUI sanUI;
@@ -120,9 +122,9 @@ public class DialogueManager : MonoBehaviour
 
         //                   ----------- extra audio  -------
 
-        if (current_node.Audio != null && audioSource != null)
+        if (current_node.Audio != null && audioSource_extra != null)
         {
-            audioSource.PlayOneShot(current_node.Audio);
+            audioSource_extra.PlayOneShot(current_node.Audio);
         }
 
 
@@ -144,9 +146,9 @@ public class DialogueManager : MonoBehaviour
             line_index++;
 
             //   播放点击音效：使用 AudioSource 播一次 AudioClip
-            if (dialogueClickClip != null && audioSource != null)
+            if (dialogueClickClip != null && audioSource_click != null)
             {
-                audioSource.PlayOneShot(dialogueClickClip);
+                audioSource_click.PlayOneShot(dialogueClickClip);
             }
         }
         else
