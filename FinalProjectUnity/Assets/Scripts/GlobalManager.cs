@@ -13,8 +13,8 @@ public class GlobalManager : MonoBehaviour
     public static GlobalManager Instance;
 
     [Header("PlayerStatus")]
-    public int sanity = 10;
-    public int MaxSan = 10;
+    public int sanity = 12;
+    public int MaxSan = 12;
     
 
 
