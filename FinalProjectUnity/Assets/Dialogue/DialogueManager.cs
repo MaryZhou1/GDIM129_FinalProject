@@ -165,7 +165,10 @@ public class DialogueManager : MonoBehaviour
         {
             GameObject buttonObj = Instantiate(replyButtonPrefab, replyButtonParent);
             buttonObj.GetComponentInChildren<TextMeshProUGUI>().text = reply.line;
-            buttonObj.GetComponent<Button>().onClick.AddListener(() => OnClickReply(reply));
+
+            // debug, so can run on itch
+            var currentReply = reply;
+            buttonObj.GetComponent<Button>().onClick.AddListener(() => OnClickReply(currentReply));
         }
     }
 
